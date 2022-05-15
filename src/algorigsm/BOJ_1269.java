@@ -29,7 +29,7 @@ public class BOJ_1269 {
 				b_plus++;
 			}
 		}
-		sc.close();
+//		sc.close();
 		int count = a+b;
 		System.out.println(count-a_plus-b_plus);
 
