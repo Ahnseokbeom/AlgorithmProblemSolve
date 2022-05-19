@@ -1,38 +1,42 @@
 package algorigsm;
 
+import java.io.BufferedReader;
 import java.io.IOException;
-import java.util.HashMap;
-import java.util.Scanner;
+import java.io.InputStreamReader;
+import java.util.HashSet;
+import java.util.Set;
+import java.util.StringTokenizer;
 
 public class BOJ_1269 {
-	public static void main(String[] args) throws IOException{
-		Scanner sc = new Scanner(System.in);
-		int a = sc.nextInt();
-		int b = sc.nextInt();
-		HashMap<Integer, Integer> a_map = new HashMap<>();
-		HashMap<Integer, Integer> b_map = new HashMap<>();
-		for(int i = 0;i<a;i++) {
-			a_map.put(i, sc.nextInt());
-		}
-		for(int j = 0;j<b;j++) {
-			b_map.put(j, sc.nextInt());
-		}
-		int a_plus = 0;
-		int b_plus = 0;
-		for(int i = 0;i<a;i++) {
-			if(b_map.containsValue(a_map.get(i))) {
-				a_plus++;
-			}
-		}
-		for(int i = 0;i<b;i++) {
-			if(a_map.containsValue(b_map.get(i))) {
-				b_plus++;
-			}
-		}
-		sc.close();
-		int count = a+b;
-		System.out.println(count-a_plus-b_plus);
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st = new StringTokenizer(br.readLine());
 
-	}
+        int a = Integer.parseInt(st.nextToken());
+        int b = Integer.parseInt(st.nextToken());
+        Set<Integer> setA = new HashSet<>();
+        Set<Integer> setB = new HashSet<>();
 
+        st = new StringTokenizer(br.readLine());
+        for(int i = 0; i < a; i++) {
+            setA.add(Integer.parseInt(st.nextToken()));
+        }
+        st = new StringTokenizer(br.readLine());
+        for(int i = 0; i < b; i++) {
+            setB.add(Integer.parseInt(st.nextToken()));
+        }
+
+        int total = 0;
+        for(int num : setA) {
+            if(!setB.contains(num)) {
+                total += 1;
+            }
+        }
+        for(int num : setB) {
+            if(!setA.contains(num)) {
+                total += 1;
+            }
+        }
+        System.out.println(total);
+    }
 }
