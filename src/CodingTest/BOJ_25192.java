@@ -1,5 +1,6 @@
 package CodingTest;
 
+import java.util.HashSet;
 import java.util.Scanner;
 
 public class BOJ_25192 {
@@ -7,17 +8,17 @@ public class BOJ_25192 {
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
 		int result = 0;
-		String copy = "abcdsacsadwsacsdwsacs";
-		for(int i = 0;i<n;i++) {
+		HashSet<String> hs = new HashSet<>();
+		while(n-->0) {
 			String s = sc.next();
-			if(s.equals(copy)) {
+			if(s.equals("ENTER")) {
+				hs = new HashSet<>();
 				continue;
-			}else if(s.equals("ENTER")) {
-				continue;
-			}else {
+			}
+			if(!hs.contains(s)) {
+				hs.add(s);
 				result++;
 			}
-			copy = s;
 		}
 		sc.close();
 		System.out.println(result);
