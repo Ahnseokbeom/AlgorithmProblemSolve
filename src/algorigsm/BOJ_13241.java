@@ -9,21 +9,21 @@ public class BOJ_13241 {
 	public static void main(String[] args) throws IOException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = new StringTokenizer(br.readLine()," ");
-		int a = Integer.parseInt(st.nextToken());
-		int b = Integer.parseInt(st.nextToken());
+		long a = Long.parseLong(st.nextToken());
+		long b = Long.parseLong(st.nextToken());
 		System.out.println(max(a,b));
 	}
 	//	최대 공약수
-	static int min(int a, int b) {
+	static long min(long a, long b) {
 		while(b!=0){
-			int r = a%b;
+			long r = a%b;
 			a = b;
 			b = r;
 		}
 		return a;
 	}
 	//최소  공배수
-	static int max(int a, int b) {
-		return a*b / min(a,b);
+	static long max(long a, long b) {
+		return (a*b) / min(a,b);
 	}
 }
