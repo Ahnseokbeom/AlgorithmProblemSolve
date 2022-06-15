@@ -3,6 +3,7 @@ package algorigsm;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
@@ -25,6 +26,7 @@ public class BOJ_17176 {
 				c[i] = (char)(num+70);
 			}
 		}
+		System.out.println(Arrays.toString(c));
 		String s = br.readLine();
 		Queue<Character> q = new LinkedList<Character>();
 		for(int i = 0;i<s.length();i++) {
