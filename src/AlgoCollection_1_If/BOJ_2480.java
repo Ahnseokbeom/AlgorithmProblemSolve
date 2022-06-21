@@ -1,4 +1,4 @@
-package AlgoCollection;
+package AlgoCollection_1_If;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -26,5 +26,4 @@ public class BOJ_2480 {
 		}
 		System.out.println(sb);
 	}
-
 }

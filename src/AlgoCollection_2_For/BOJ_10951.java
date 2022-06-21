@@ -1,23 +1,20 @@
-package AlgoCollection;
+package AlgoCollection_2_For;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class BOJ_10952 {
+public class BOJ_10951 {
 	public static void main(String[] args) throws IOException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		int a = 1,b = 1;
-		StringTokenizer st;
-		int sum = 0;
+		StringTokenizer st = new StringTokenizer(br.readLine()," ");
 		StringBuilder sb = new StringBuilder();
-		while(true) {
+		while(st.hasMoreTokens()) {
+			int a = Integer.parseInt(st.nextToken());
+			int b = Integer.parseInt(st.nextToken());
 			st = new StringTokenizer(br.readLine()," ");
-			a = Integer.parseInt(st.nextToken());
-			b = Integer.parseInt(st.nextToken());
-			sum = a+b;
-			if(a==0 && b==0)break;
+			int sum = a+b;
 			sb.append(sum).append("\n");
 		}
 		System.out.println(sb);

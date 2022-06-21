@@ -1,4 +1,4 @@
-package AlgoCollection;
+package AlgoCollection_1_If;
 
 import java.util.Scanner;
 
@@ -25,5 +25,4 @@ public class BOJ_2525 {
 		System.out.println(a+" "+b);
 		sc.close();
 	}
-
 }

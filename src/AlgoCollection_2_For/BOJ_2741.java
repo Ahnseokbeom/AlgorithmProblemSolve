@@ -1,13 +1,13 @@
-package AlgoCollection;
+package AlgoCollection_2_For;
 
 import java.util.Scanner;
 
-public class BOJ_2739 {
+public class BOJ_2741 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
-		for(int i = 1;i<=9;i++) {
-			System.out.println(n+" * "+i+" = "+n*i);
+		for(int i = 1;i<=n;i++) {
+			System.out.println(n);
 		}
 		sc.close();
 	}

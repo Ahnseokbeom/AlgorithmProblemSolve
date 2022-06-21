@@ -1,4 +1,4 @@
-package AlgoCollection;
+package AlgoCollection_2_For;
 
 import java.io.BufferedReader;
 import java.io.IOException;

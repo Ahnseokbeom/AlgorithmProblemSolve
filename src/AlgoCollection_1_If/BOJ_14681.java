@@ -1,4 +1,4 @@
-package AlgoCollection;
+package AlgoCollection_1_If;
 
 import java.util.Scanner;
 
@@ -16,6 +16,7 @@ public class BOJ_14681 {
 		}else {
 			System.out.println(4);
 		}
+		sc.close();
 	}
 
 }
