@@ -1,14 +1,19 @@
 package programmers;
 
 public class PRO_Fibo {
-	public static void main(String[] args) {
-		System.out.println(fibo(3));
+	class Solution {
+	    public int solution(int n) {
+	        int answer = 0;
+	        if(n==0 || n==1) return 1;
+	        int num1 = 0;
+	        int num2 = 1;
+	        for(int i = 2;i<=n;i++){
+	            answer = (num1+num2)%1234567;
+	            num1=num2;
+	            num2=answer;
+	        }
+	        return answer;
+	    }
 	}
-	public static int fibo(int n) {
-		if(n<=2) {
-			return 1;
-		}else {
-			return fibo(n-2)+fibo(n-1);
-		}
-	}
+
 }
