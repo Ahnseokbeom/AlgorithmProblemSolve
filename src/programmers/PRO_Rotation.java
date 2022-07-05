@@ -9,32 +9,32 @@ public class PRO_Rotation {
 	        String str = s;
 	        for(int i = 0; i < s.length(); i++){
 	            if(result(str)) answer++;
-	            str = str.substring(1, s.length()) + str.charAt(0); // 결과 출력
+	            str = str.substring(1, s.length()) + str.charAt(0);
 	        }
-	        
+
 	        return answer;
 	    }
-	    
-	    boolean result(String s){ // 알맞은 괄호 확인 함수
+
+	    boolean result(String s){
 	        Stack<Character> stack = new Stack<>();
 	        for(int i = 0; i < s.length(); i++){
 	            try{
 	                switch(s.charAt(i)){
-	                    case '[': 
+	                    case '[':
 	                        stack.add('[');
 	                        break;
 	                    case ']':
 	                        if(stack.peek() != '[') return false;
 	                        stack.pop();
 	                        break;
-	                    case '{': 
+	                    case '{':
 	                        stack.add('{');
 	                        break;
 	                    case '}':
 	                        if(stack.peek() != '{') return false;
 	                        stack.pop();
 	                        break;
-	                    case '(': 
+	                    case '(':
 	                        stack.add('(');
 	                        break;
 	                    case ')':
@@ -50,4 +50,3 @@ public class PRO_Rotation {
 	    }
 	}
 }
-	   

@@ -3,39 +3,39 @@ package programmers;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-//1 - 6°³ / 2 - 5°³ / 3 - 4°³ / 4 - 3°³ / 5 - 2°³ / 6 ±× ¿Ü
+//1 - 6ê°œ ì¼ì¹˜ / 2 - 5ê°œ ì¼ì¹˜ / 3 - 4ê°œ ì¼ì¹˜ / 4 - 3ê°œ ì¼ì¹˜ / 5 - 2ê°œ ì¼ì¹˜ / 6 ê·¸ ì™¸
 public class PRO_Lotto {
 	class Solution {
 	    public int[] solution(int[] lottos, int[] win_nums) {
 	    	int[] answer = {};
-	    	int zero = 0; // 0ÀÇ °³¼ö
-	    	int count = 0; // ¸ÂÀº °³¼ö
+	    	int zero = 0; // 0ì˜ ê°œìˆ˜
+	    	int count = 0; // ë§ì€ ê°œìˆ˜
 	    	int[] arr = {6,6,5,4,3,2,1};
-	    	Arrays.sort(lottos); // ¿À¸§Â÷¼ø Á¤·Ä
-	    	Arrays.sort(win_nums); // ¿À¸§Â÷¼ø Á¤·Ä
-	    	
-	    	for(int i = 0;i<lottos.length;i++) { // ¾Ë¾Æº¼ ¼ö ¾ø´Â ¹øÈ£
+	    	Arrays.sort(lottos); // ì˜¤ë¦„ì°¨ìˆœ ì •ë ¬
+	    	Arrays.sort(win_nums); // ì˜¤ë¦„ì°¨ìˆœ ì •ë ¬
+
+	    	for(int i = 0;i<lottos.length;i++) { // ì•Œì•„ë³¼ ìˆ˜ ì—†ëŠ” ë²ˆí˜¸
 	    		if(lottos[i]==0) {
 	    			zero++;
 	    			continue;
 	    		}
-	    		for(int j = 0;j<win_nums.length;j++) { // ³» ·Î¶Ç¹øÈ£¿Í ´çÃ·¹øÈ£°¡ µ¿ÀÏÇÏ¸é 1 Áõ°¡
+	    		for(int j = 0;j<win_nums.length;j++) { // ë‚´ ë¡œë˜ë²ˆí˜¸ì™€ ë‹¹ì²¨ë²ˆí˜¸ê°€ ë™ì¼í•˜ë©´ 1 ì¦ê°€
 	    			if(lottos[i]==win_nums[j]) {
-	    				count++;	
+	    				count++;
 	    				break;
 	    			}
 	    		}
 	    	}
-	    	ArrayList<Integer> list = new ArrayList<Integer>(); // list »ı¼º
-	    	list.add(arr[zero+count]); // ÃÖ´ë¼øÀ§
-	    	list.add(arr[count]); // ÃÖ¼Ò¼øÀ§
-	    	answer = new int[list.size()]; // answer Àç ÃÊ±âÈ­
-	    	for(int i = 0;i<answer.length;i++) { // answerÀÇ °ª Ãß°¡
+	    	ArrayList<Integer> list = new ArrayList<Integer>();
+	    	list.add(arr[zero+count]);
+	    	list.add(arr[count]);
+	    	answer = new int[list.size()];
+	    	for(int i = 0;i<answer.length;i++) {
 	    		answer[i] = list.get(i);
 	    	}
-	    	return answer; // Ãâ·Â
+	    	return answer;
 	    	}
-	    	
+
 	    }
-	}
+}
 

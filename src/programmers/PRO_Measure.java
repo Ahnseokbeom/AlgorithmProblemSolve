@@ -1,13 +1,12 @@
 package programmers;
 
-//¾à¼öÀÇ °³¼ö¿Í µ¡¼À
 public class PRO_Measure {
 	class Solution {
 	    public int solution(int left, int right) {
 	    	 int answer = 0;
 	    	 int minus = right-left;
 	    	 int min = left;
-	    	 
+
 	    	 for(int i = 0;i<=minus;i++) {
 	    		 int count = 0;
 	    		 left = min + i;

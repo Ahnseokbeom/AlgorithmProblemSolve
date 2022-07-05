@@ -6,36 +6,34 @@ import java.util.Map;
 
 //{"Enter uid1234 Muzi","Enter uid4567 Prodo",
 //"Leave uid1234","Enter uid1234 Prodo","Change uid4567 Ryan"}
-//½ÇÆÐÇÑ ¹®Á¦ - id¸¸ »Ì¾Æ³»´Â °ÍÀº ¼º°øÇßÁö¸¸, ±× µÚ¿¡ Ä¡È¯ÇÏ´Â °úÁ¤¿¡¼­ ½ÇÆÐÇÔ
 public class PRO_openchat {
 	class Solution {
 	    public String[] solution(String[] record) {
 	    	ArrayList<String> list = new ArrayList<String>();
 	    	Map<String, String> name = new HashMap<>();
-	    	for(int i = 0;i<record.length;i++) { // arr¹è¿­À» °ø¹é ±âÁØÀ¸·Î ±¸ºÐ 
+	    	for(int i = 0;i<record.length;i++) { // arrë°°ì—´ì„ ê³µë°± ê¸°ì¤€ìœ¼ë¡œ êµ¬ë¶„
 	    		String[] arr = record[i].split(" ");
-	    		if(arr[0].equals("Enter")) { // 0¹øÂ° ÀÎµ¦½º°¡ enterÀÌ¸é(ÀÔÀå)
-	    			name.put(arr[1], arr[2]); // id¿Í usernameÀ» map¿¡ ³Ö´Â´Ù.
-	    			list.add(arr[1]+"´ÔÀÌ µé¾î¿Ô½À´Ï´Ù."); // listÀÇ id¸¦ ³ÖÀº °á°ú Ãß°¡
-	    		}else if(arr[0].equals("Leave")) { // 0¹øÂ° ÀÎµ¦½º°¡ leaveÀÌ¸é(ÅðÀå)
-	    			list.add(arr[1]+"´ÔÀÌ ³ª°¬½À´Ï´Ù."); // listÀÇ id¸¦ ³Ö°í °á°ú Ãß°¡
-	    		}else if(arr[0].equals("Change")) { // 0¹øÂ° ÀÎµ¦½º°¡ changeÀÌ¸é(¹Ù²Þ)
-	    			name.replace(arr[1], arr[2]); // id¿Í usernameÀÇ °ªÀ» ¹Ù²ãÁØ´Ù.
+	    		if(arr[0].equals("Enter")) { // 0ë²ˆì§¸ ì¸ë±ìŠ¤ê°€ enterì´ë©´(ìž…ìž¥)
+	    			name.put(arr[1], arr[2]); // idì™€ usernameì„ mapì— ë„£ëŠ”ë‹¤.
+	    			list.add(arr[1]+"ë‹˜ì´ ë“¤ì–´ì™”ìŠµë‹ˆë‹¤."); // listì˜ idë¥¼ ë„£ì€ ê²°ê³¼ ì¶”ê°€
+	    		}else if(arr[0].equals("Leave")) { // 0ë²ˆì§¸ ì¸ë±ìŠ¤ê°€ leaveì´ë©´(í‡´ìž¥)
+	    			list.add(arr[1]+"ë‹˜ì´ ë‚˜ê°”ìŠµë‹ˆë‹¤."); // listì˜ idë¥¼ ë„£ê³  ê²°ê³¼ ì¶”ê°€
+	    		}else if(arr[0].equals("Change")) { // 0ë²ˆì§¸ ì¸ë±ìŠ¤ê°€ changeì´ë©´(ë°”ê¿ˆ)
+	    			name.replace(arr[1], arr[2]); // idì™€ usernameì˜ ê°’ì„ ë°”ê¿”ì¤€ë‹¤.
 	    		}
 	    	}
 	    	String[] answer = new String[list.size()];
 	    	for(int i = 0;i<answer.length;i++) {
-	    		int idx = list.get(i).indexOf("´Ô"); // (uid???? - 0~6±îÁöÀÌ¹Ç·Î) 7 »Ì¾Æ³¿
-	    		String str = list.get(i).substring(0,idx); // 0~6±îÁö »ÌÀ½(~~´ÔÀÌ µé¾î¿Ô½À´Ï´Ù. ~~ ¹ßÃé)
+	    		int idx = list.get(i).indexOf("ë‹˜"); // (uid???? - 0~6ê¹Œì§€ì´ë¯€ë¡œ) 7 ë½‘ì•„ëƒ„
+	    		String str = list.get(i).substring(0,idx); // 0~6ê¹Œì§€ ë½‘ìŒ(~~ë‹˜ì´ ë“¤ì–´ì™”ìŠµë‹ˆë‹¤. ~~ ë°œì·Œ)
 	    		answer[i] = name.get(str)+list.get(i).substring(idx);
-	    		//name.get(str)ÀÌ¶õ name.get - hashmapÀ¸·Î ÇöÀç id(Å°°ª)¿Í usernameÀÌ ÀÖÀ½
-	    		//±×·¡¼­ name.get(str)À» ÇÏ¸é id(Å°°ª)°¡ µé¾î¿À±â ¶§¹®¿¡ usernameÀ¸·Î ¹Ù²ï´Ù.
-	    		//substringÀÌ¶õ - substring(1,2) - 1Àº ½ÃÀÛ,2´Â ³¡ / substring(1) 1Àº ½ÃÀÛÀÌ¹Ç·Î 1ºÎÅÍ ³¡±îÁö
-	    		//Áï, substring(idx) = "´Ô"ºÎÅÍ ³¡±îÁö Ãâ·ÂÇØÁØ´Ù.
+	    		//name.get(str)ì´ëž€ name.get - hashmapìœ¼ë¡œ í˜„ìž¬ id(í‚¤ê°’)ì™€ usernameì´ ìžˆìŒ
+	    		//ê·¸ëž˜ì„œ name.get(str)ì„ í•˜ë©´ id(í‚¤ê°’)ê°€ ë“¤ì–´ì˜¤ê¸° ë•Œë¬¸ì— usernameìœ¼ë¡œ ë°”ë€ë‹¤.
+	    		//substringì´ëž€ - substring(1,2) - 1ì€ ì‹œìž‘,2ëŠ” ë / substring(1) 1ì€ ì‹œìž‘ì´ë¯€ë¡œ 1ë¶€í„° ëê¹Œì§€
+	    		//ì¦‰, substring(idx) = "ë‹˜"ë¶€í„° ëê¹Œì§€ ì¶œë ¥í•´ì¤€ë‹¤.
 	    	}
-	        
+
 	        return answer;
 	    }
 	}
-
 }

@@ -1,6 +1,5 @@
 package programmers;
 
-//³»Àû
 public class PRO_NeaJuck {
 	class Solution {
 	    public int solution(int[] a, int[] b) {
