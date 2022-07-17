@@ -2,7 +2,7 @@ package programmers;
 
 import java.util.Arrays;
 
-public class PRO_GymSuit {
+public class PRO_1_GymSuit {
 	class Solution {
 	    public int solution(int n, int[] lost, int[] reserve) {
 	        int answer = n - lost.length;

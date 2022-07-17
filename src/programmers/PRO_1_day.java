@@ -1,6 +1,6 @@
 package programmers;
 
-public class PRO_day {
+public class PRO_1_day {
 	class Solution {
 	    public String solution(int a, int b) {
 	        String[] day = {"FRI","SAT","SUN","MON","TUE","WED","THU"};

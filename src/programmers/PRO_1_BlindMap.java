@@ -2,7 +2,7 @@ package programmers;
 
 import java.util.ArrayList;
 
-public class PRO_BlindMap{
+public class PRO_1_BlindMap{
 	class Solution {
 	    public String[] solution(int n, int[] arr1, int[] arr2) {
 	        String[] answer = new String[arr1.length];

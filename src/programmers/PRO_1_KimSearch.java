@@ -1,6 +1,6 @@
 package programmers;
 
-public class PRO_KimSearch {
+public class PRO_1_KimSearch {
 	class Solution {
 	    public String solution(String[] seoul) {
 	    	String answer = "";

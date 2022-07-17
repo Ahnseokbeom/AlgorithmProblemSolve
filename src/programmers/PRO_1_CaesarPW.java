@@ -1,6 +1,6 @@
 package programmers;
 
-public class PRO_CaesarPW {
+public class PRO_1_CaesarPW {
 	public static void main(String[] args) {
 		String s = "a B z";
 		String answer = "";

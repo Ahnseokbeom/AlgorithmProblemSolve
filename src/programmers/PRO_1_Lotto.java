@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 //1 - 6개 일치 / 2 - 5개 일치 / 3 - 4개 일치 / 4 - 3개 일치 / 5 - 2개 일치 / 6 그 외
-public class PRO_Lotto {
+public class PRO_1_Lotto {
 	class Solution {
 	    public int[] solution(int[] lottos, int[] win_nums) {
 	    	int[] answer = {};

@@ -1,6 +1,6 @@
 package programmers;
 
-public class PRO_Fibo {
+public class PRO_2_Fibo {
 	class Solution {
 	    public int solution(int n) {
 	        int answer = 0;

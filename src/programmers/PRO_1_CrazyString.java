@@ -1,6 +1,6 @@
 package programmers;
 
-public class PRO_CrazyString {
+public class PRO_1_CrazyString {
 	class Solution {
 	    public String solution(String s) {
 	        String answer = "";

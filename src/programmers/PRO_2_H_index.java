@@ -1,6 +1,6 @@
 package programmers;
 
-public class PRO_H_index {
+public class PRO_2_H_index {
 	public static void main(String[] args) {
 		int[] citations = {0,0,2,1,1};
 		int result = 0;

@@ -1,6 +1,7 @@
 package programmers;
 
-public class PRO_Measure {
+public class PRO_1_Measure {
+
 	class Solution {
 	    public int solution(int left, int right) {
 	    	 int answer = 0;

@@ -1,6 +1,6 @@
 package programmers;
 
-public class PRO_MiddleNum {
+public class PRO_1_MiddleNum {
 	class Solution {
 	    public String solution(String s) {
 	    	String answer = "";

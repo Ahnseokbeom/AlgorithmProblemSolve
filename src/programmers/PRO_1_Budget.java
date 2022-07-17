@@ -2,7 +2,7 @@ package programmers;
 
 import java.util.Arrays;
 
-public class PRO_Budget {
+public class PRO_1_Budget {
 	class Solution {
 	    public int solution(int[] d, int budget) {
 	        int answer = 0;

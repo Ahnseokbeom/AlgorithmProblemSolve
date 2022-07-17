@@ -1,6 +1,6 @@
 package programmers;
 
-public class PRO_GCDLCM {
+public class PRO_1_GCDLCM {
 	public static void main(String[] args) {
 		System.out.println(GCD(3,12)+" "+LCM(3,12));
 		System.out.println(GCD(2,5)+" "+LCM(2,5));

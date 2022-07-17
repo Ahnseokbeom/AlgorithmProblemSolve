@@ -1,7 +1,7 @@
 package programmers;
 import java.util.*;
 
-public class PRO_K_Number {
+public class PRO_1_K_Number {
 
 	class Solution {
     public int[] solution(int[] array, int[][] commands) {

@@ -2,7 +2,7 @@ package programmers;
 
 import java.util.Stack;
 
-public class PRO_Rotation {
+public class PRO_2_Rotation {
 	class Solution {
 	    public int solution(String s) {
 	        int answer = 0;

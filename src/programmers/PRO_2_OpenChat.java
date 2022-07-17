@@ -6,7 +6,7 @@ import java.util.Map;
 
 //{"Enter uid1234 Muzi","Enter uid4567 Prodo",
 //"Leave uid1234","Enter uid1234 Prodo","Change uid4567 Ryan"}
-public class PRO_openchat {
+public class PRO_2_OpenChat {
 	class Solution {
 	    public String[] solution(String[] record) {
 	    	ArrayList<String> list = new ArrayList<String>();

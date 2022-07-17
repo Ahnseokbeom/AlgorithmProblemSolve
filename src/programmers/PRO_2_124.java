@@ -1,6 +1,6 @@
 package programmers;
 
-public class PRO_124 {
+public class PRO_2_124 {
 	public static void main(String[] args) {
 		String answer = "";
 		int n = 9;

@@ -1,6 +1,6 @@
 package programmers;
 
-public class PRO_Hashad {
+public class PRO_1_Hashad {
 	class Solution {
 	    public boolean solution(int x) {
 	        boolean answer = true;

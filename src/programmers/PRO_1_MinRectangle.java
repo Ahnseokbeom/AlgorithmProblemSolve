@@ -2,7 +2,7 @@ package programmers;
 
 import java.util.Arrays;
 
-public class PRO_MinRectangle {
+public class PRO_1_MinRectangle {
 	public static void main(String[] args) {
 //		int[][] num = {{10,7},{12,3},{8,15},{14,7},{5,15}};
 		int[][] sizes = {{60,50},{30,70},{60,30},{80,40}};

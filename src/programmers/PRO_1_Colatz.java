@@ -1,6 +1,6 @@
 package programmers;
 
-public class PRO_Colatz {
+public class PRO_1_Colatz {
 	class Solution {
 	    public int solution(int num) {
 	        long n = num;
