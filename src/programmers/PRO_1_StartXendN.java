@@ -2,7 +2,7 @@ package programmers;
 
 import java.util.Arrays;
 
-public class PRO_StartXendN {
+public class PRO_1_StartXendN {
 	class Solution {
 	    public long[] solution(int x, int n) {
 	        long[] answer = new long[n];

@@ -2,7 +2,7 @@ package programmers;
 
 import java.util.ArrayList;
 
-public class PRO_NotSameNumber {
+public class PRO_1_NotSameNumber {
 	public int[] solution(int []arr) {
     	ArrayList<Integer> array = new ArrayList<>();
     	for(int i = 0;i<arr.length-1;i++){

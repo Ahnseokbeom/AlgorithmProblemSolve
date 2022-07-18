@@ -1,6 +1,6 @@
 package programmers;
 
-public class PRO_NoneNumber {
+public class PRO_1_NoneNumber {
 	class Solution {
 	    public int solution(int[] numbers) {
 	    	int sum = 0;

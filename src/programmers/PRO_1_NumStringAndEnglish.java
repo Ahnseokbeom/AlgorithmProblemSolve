@@ -1,6 +1,6 @@
 package programmers;
 
-public class PRO_NumStringAndEnglish {
+public class PRO_1_NumStringAndEnglish {
 	public static void main(String[] args) {
 		String[] num = {"zero","one","two","three","four","five","six","seven","eight","nine"};
 		String[] index = {"0","1","2","3","4","5","6","7","8","9"};

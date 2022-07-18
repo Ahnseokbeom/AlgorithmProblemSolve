@@ -1,6 +1,6 @@
 package programmers;
 
-public class PRO_NeaJuck {
+public class PRO_1_NeaJuck {
 	class Solution {
 	    public int solution(int[] a, int[] b) {
 	    	int result = 0;

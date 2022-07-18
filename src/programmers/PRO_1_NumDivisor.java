@@ -3,7 +3,7 @@ package programmers;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class PRO_NumDivisor {
+public class PRO_1_NumDivisor {
 	class Solution {
 	    public int[] solution(int[] arr, int divisor) {
 	    	ArrayList<Integer> array = new ArrayList<>();

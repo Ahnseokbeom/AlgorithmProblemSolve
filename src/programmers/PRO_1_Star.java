@@ -2,7 +2,7 @@ package programmers;
 
 import java.util.Scanner;
 
-public class PRO_Star {
+public class PRO_1_Star {
 	class Solution {
 	    public void main(String[] args) {
 	        Scanner sc = new Scanner(System.in);

@@ -1,6 +1,6 @@
 package programmers;
 
-public class PRO_PlusMinus {
+public class PRO_1_PlusMinus {
 	class Solution {
 	    public int solution(int[] absolutes, boolean[] signs) {
 	    	int sum = 0;

@@ -1,6 +1,6 @@
 package programmers;
 
-public class PRO_MoneyResult {
+public class PRO_1_MoneyResult {
 	public static void main(String[] args) {
 		long answer = 0;
 		int price = 3;

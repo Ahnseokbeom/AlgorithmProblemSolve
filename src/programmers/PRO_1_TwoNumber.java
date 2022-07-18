@@ -3,7 +3,7 @@ package programmers;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class PRO_TwoNumber {
+public class PRO_1_TwoNumber {
 	public static void main(String[] args) {
 		int[] num = {2,1,3,4,1};
 		ArrayList<Integer> arr = new ArrayList<>();

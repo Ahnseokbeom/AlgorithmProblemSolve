@@ -2,7 +2,7 @@ package programmers;
 
 import java.util.HashSet;
 
-public class PRO_PhoneKetmon {
+public class PRO_1_PhoneKetmon {
 	class Solution {
 	    public int solution(int[] nums) {
 	        int size = nums.length/2;

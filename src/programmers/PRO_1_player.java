@@ -2,7 +2,7 @@ package programmers;
 
 import java.util.Arrays;
 
-public class PRO_player {
+public class PRO_1_player {
 	class Solution {
 	    public String solution(String[] participant, String[] completion) {
 	    	String answer = "";

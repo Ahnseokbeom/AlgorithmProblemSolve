@@ -1,6 +1,6 @@
 package programmers;
 
-public class PRO_PhoneNumberBlind {
+public class PRO_1_PhoneNumberBlind {
 	class Solution {
 	    public String solution(String phone_number) {
 	        String answer = "";

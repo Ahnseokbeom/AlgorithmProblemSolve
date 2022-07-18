@@ -3,7 +3,7 @@ package programmers;
 import java.util.Arrays;
 import java.util.Collections;
 
-public class PRO_StringSort {
+public class PRO_1_StringSort {
 	class Solution {
 	    public String solution(String s) {
 	        String answer = "";

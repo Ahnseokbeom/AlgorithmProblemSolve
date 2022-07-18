@@ -1,6 +1,6 @@
 package programmers;
 
-public class PRO_Prime {
+public class PRO_1_Prime {
 	class Solution {
 	    public int solution(int n) {
 	        int answer = 0;

@@ -1,6 +1,6 @@
 package programmers;
 
-public class PRO_PandY {
+public class PRO_1_PandY {
 	class Solution {
 	    boolean solution(String s) {
 	        boolean answer = true;

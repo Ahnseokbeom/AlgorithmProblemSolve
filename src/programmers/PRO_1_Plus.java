@@ -1,6 +1,6 @@
 package programmers;
 
-public class PRO_Plus {
+public class PRO_1_Plus {
 	class Solution {
 	    public int[][] solution(int[][] arr1, int[][] arr2) {
 	        int[][] answer = new int[arr1.length][arr1[0].length];

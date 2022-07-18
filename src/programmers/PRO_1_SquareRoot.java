@@ -1,6 +1,6 @@
 package programmers;
 
-public class PRO_SquareRoot {
+public class PRO_1_SquareRoot {
 	class Solution {
 	    public long solution(long n) {
 	        long answer = 0;
