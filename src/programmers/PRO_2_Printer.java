@@ -3,7 +3,7 @@ package programmers;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class PRO_2_Print {
+public class PRO_2_Printer {
 	class Solution {
 	    public int solution(int[] priorities, int location) {
 	        int answer = 0;
