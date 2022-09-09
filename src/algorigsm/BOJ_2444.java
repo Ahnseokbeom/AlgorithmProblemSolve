@@ -5,8 +5,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
-public class BOJ_2442 {
-	public static void main(String[] args) throws IOException {
+public class BOJ_2444 {
+	public static void main(String[] args) throws IOException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int n = Integer.parseInt(br.readLine());
 		ArrayList<Integer> arr = new ArrayList<>();
@@ -25,8 +25,16 @@ public class BOJ_2442 {
 			}
 			sb.append("\n");
 		}
+		for(int a = n-1;a>=1;a--) {
+			for(int b = 0;b<n-a;b++) {
+				sb.append(" ");
+			}
+			for(int c = arr.get(a-1);c>0;c--) {
+				sb.append("*");
+			}
+			sb.append("\n");
+		}
 		System.out.println(sb);
 	}
-
 
 }
