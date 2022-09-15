@@ -9,12 +9,12 @@ public class BOJ_2407 {
 	public static void main(String[] args) throws IOException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = new StringTokenizer(br.readLine()," ");
-		int n = Integer.parseInt(st.nextToken());
-		int m = Integer.parseInt(st.nextToken());
+		long n = Long.parseLong(st.nextToken());
+		long m = Long.parseLong(st.nextToken());
 		long result = dic(n,m);
 		System.out.println(result);
 	}
-	public static long dic(int n, int m) {
+	public static long dic(long n, long m) {
 		if(m==0 || n==m) {
 			return 1;
 		}
