@@ -1,4 +1,4 @@
-package algorigsm;
+	package algorigsm;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -17,10 +17,10 @@ public class BOJ_12015 {
 		}
 		int max = 0;
 		for(int i = 0;i<a;i++) {
-			dp[i] = list[i];
+			dp[i] = 1;
 			for(int j = 0;j<i;j++) {
-				if(list[j]<list[i] && dp[i]<dp[j]+list[i]) {
-					dp[i] = dp[j]+list[i];
+				if(list[j]<list[i] && dp[i]<=dp[j]) {
+					dp[i] = dp[j]+1;
 				}
 			}
 			max = Math.max(max, dp[i]);
