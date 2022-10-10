@@ -1,4 +1,3 @@
-//틀린 답안
 package algorigsm;
 
 import java.util.Scanner;
@@ -6,27 +5,32 @@ import java.util.Scanner;
 public class BOJ_1032 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int n = sc.nextInt(); //확인할 문자열 총 개수 
-		
-		int i = 0;
-		String[] result = new String[n];
-		
-		for(i = 0;i<n;i++) {
-			result[i] = sc.next();
+		int n = sc.nextInt();
+
+		String[] arr = new String[n];
+
+		for(int i = 0;i<n;i++) {
+			arr[i] = sc.next();
 		}
-		sc.close();
-		for(i =0; i<n;i++) {
-			for(int j = 0;j<result[0].length();j++) {
-				if(result[i].charAt(j) != result[i+1].charAt(j)) {
-					System.out.print("?");
-				}else {
-					System.out.print(result[i].charAt(j));
+		boolean check;
+		StringBuilder sb = new StringBuilder();
+		for(int i = 0;i<arr[0].length();i++) {
+			char c = arr[0].charAt(i);
+			check = true;
+			for(int j = 1;j<n;j++) {
+				if(c!=arr[j].charAt(i)) {
+					check = false;
+					break;
 				}
 			}
+			if(check) sb.append(arr[0].charAt(i));
+			else sb.append("?");
 		}
+		System.out.println(sb);
+		sc.close();
 
 	}
 }
-	
+
 
 
