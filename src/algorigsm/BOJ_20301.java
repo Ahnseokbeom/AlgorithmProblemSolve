@@ -12,28 +12,28 @@ public class BOJ_20301 {
 	public static void main(String[] args) throws IOException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = new StringTokenizer(br.readLine()," ");
-		int n = Integer.parseInt(st.nextToken()); // ¼ö
-		int k = Integer.parseInt(st.nextToken()); // ¼ø¿­
-		int m = Integer.parseInt(st.nextToken()); // ¹Ù²î´Â °÷
+		int n = Integer.parseInt(st.nextToken()); // ìˆ˜
+		int k = Integer.parseInt(st.nextToken()); // ìˆœì—´
+		int m = Integer.parseInt(st.nextToken()); // ë°”ë€ŒëŠ” ê³³
 		Queue<Integer> q = new LinkedList<Integer>();
 		for(int i = 1;i<=n;i++) {
 			q.offer(i);
 		}
 		ArrayList<Integer> list = new ArrayList<Integer>();
-		while(q.size()!=0) { // qÀÇ Å©±â°¡ 0ÀÌ ¾Æ´Ò¶§±îÁö ¹İº¹
-			if(q.size()==n-m) { // qÀÇ Å©±â°¡ ¹İÀü(N-M)°ú °°´Ù¸é ¿ª¼øÀ¸·Î ¹èÄ¡
-				int result = q.poll(); 
+		while(q.size()!=0) { // qì˜ í¬ê¸°ê°€ 0ì´ ì•„ë‹ë•Œê¹Œì§€ ë°˜ë³µ
+			if(q.size()==n-m) { // qì˜ í¬ê¸°ê°€ ë°˜ì „(N-M)ê³¼ ê°™ë‹¤ë©´ ì—­ìˆœìœ¼ë¡œ ë°°ì¹˜
+				int result = q.poll();
 				q.offer(q.poll());
 				q.offer(result);
 			}
-			for(int i = 0;i<k-1;i++) { // k-1¸¸Å­ »èÁ¦
+			for(int i = 0;i<k-1;i++) { // k-1ë§Œí¼ ì‚­ì œ
 				q.offer(q.poll());
 			}
 
-			list.add(q.poll()); // k¹øÂ° ¼ö »èÁ¦ÇÏ¸é¼­ list¿¡ »ğÀÔ
+			list.add(q.poll()); // kë²ˆì§¸ ìˆ˜ ì‚­ì œí•˜ë©´ì„œ listì— ì‚½ì…
 		}
 		StringBuilder sb = new StringBuilder();
-		for(int i = 0;i<list.size();i++) { // Ãâ·Â
+		for(int i = 0;i<list.size();i++) { // ì¶œë ¥
 			sb.append(list.get(i)).append("\n");
 		}
 		System.out.println(sb);
