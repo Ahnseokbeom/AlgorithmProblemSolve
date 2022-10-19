@@ -5,7 +5,6 @@ import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
-import java.util.Arrays;
 
 public class BOJ_1300 {
 	public static void main(String[] args) throws IOException{
@@ -15,17 +14,24 @@ public class BOJ_1300 {
 		int n = Integer.parseInt(br.readLine());
 		// 찾고하자하는 값의 인덱스 번호
 		int k = Integer.parseInt(br.readLine());
-		int[][] a = new int[n][n];
-		int[] b = new int[n*n];
-		int c = 0;
-		for(int i = 1;i<=n;i++) {
-			for(int j = 1;j<=n;j++) {
-				a[i-1][j-1] = i*j;
-				b[c++] = i*j;
+		int result = 0;
+		int start = 1;
+		int end = k;
+		while(start <= end) {
+			int mid = (start+end)/2;
+			long count = 0;
+
+			for(int i = 1;i<=n;i++) {
+				count += Math.min(mid/i,n);
+			}
+			if(count < k) {
+				start = mid+1;
+			}else {
+				end = mid - 1;
+				result = mid;
 			}
 		}
-		Arrays.sort(b);
-		bw.write(b[k]+"\n");
+		bw.write(result+"\n");
 		bw.flush();
 		bw.close();
 
