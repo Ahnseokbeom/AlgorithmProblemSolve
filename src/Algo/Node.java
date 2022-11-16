@@ -10,9 +10,8 @@ public class Node {
 		}
 		public void printAll() {
 			if(value==0) return;
-			System.out.printf("%d ",value);
-			value--;
-			printAll();
+			System.out.printf("%d ",this.value);
+			if(next != null) next.printAll();
 		}
 	}
 	public static void main(String[] args) {
