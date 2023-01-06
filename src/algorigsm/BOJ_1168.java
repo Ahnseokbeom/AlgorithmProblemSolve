@@ -8,7 +8,6 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-//메모리 초과
 public class BOJ_1168 {
 	public static void main(String[] args) throws IOException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -20,14 +19,14 @@ public class BOJ_1168 {
 		for(int i = 1;i<=n;i++) {
 			queue.offer(i);
 		}
-		
+
 		while(!queue.isEmpty()) {
 			for(int i = 0;i<k-1;i++) {
 				queue.offer(queue.poll());
 			}
 			list.add(queue.poll());
 		}
-		
+
 		System.out.print("<");
 		for(int i = 0;i<list.size();i++) {
 			if(i == list.size()-1) {
