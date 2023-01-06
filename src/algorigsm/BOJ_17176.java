@@ -41,9 +41,9 @@ public class BOJ_17176 {
 			}
 		}
 		if(!q.isEmpty()) {
-			System.out.println('n');
+			System.out.println("n");
 		}else {
-			System.out.println('y');
+			System.out.println("y");
 		}
 	}
 
