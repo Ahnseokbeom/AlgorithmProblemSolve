@@ -13,7 +13,7 @@ public class BOJ_1168 {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = new StringTokenizer(br.readLine()," ");
 		int n = Integer.parseInt(st.nextToken());
-		int k = Integer.parseInt(st.nextToken());
+		int k = Integer.parseInt(st.nextToken()) -1;
 		Queue<Integer> queue = new LinkedList<Integer>();
 		ArrayList<Integer> list = new ArrayList<Integer>();
 		for(int i = 1;i<=n;i++) {
