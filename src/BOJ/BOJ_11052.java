@@ -19,10 +19,9 @@ public class BOJ_11052 {
 		for(int i = 1;i<=n;i++) {
 			for(int j = 1;j<=i;j++) {
 				dp[i] = Math.max(dp[i], dp[i-j]+arr[j]);
-				System.out.println("dp[i] : "+dp[i]);
 			}
 		}
-//		System.out.println(dp[n]);
+		System.out.println(dp[n]);
 	}
 
 }
