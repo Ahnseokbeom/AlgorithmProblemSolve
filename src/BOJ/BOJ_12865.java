@@ -16,7 +16,7 @@ public class BOJ_12865 {
 		int[] w = new int[n+1];
 		int[] v = new int[n+1];
 
-		for(int i = 0;i<n;i++) {
+		for(int i = 1;i<=n;i++) {
 			st = new StringTokenizer(br.readLine()," ");
 			w[i] = Integer.parseInt(st.nextToken());
 			v[i] = Integer.parseInt(st.nextToken());
