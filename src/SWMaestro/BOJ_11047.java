@@ -19,6 +19,7 @@ public class BOJ_11047 {
 			}
 			if(k==0) break;
 		}
+		sc.close();
 		System.out.println(count);
 	}
 

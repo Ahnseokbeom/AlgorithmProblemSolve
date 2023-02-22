@@ -18,6 +18,7 @@ public class BOJ_1715 {
 			sum+=a+b;
 			pq.offer(a+b);
 		}
+		sc.close();
 		System.out.println(sum);
 	}
 
