@@ -11,6 +11,11 @@ public class binarySearch {
 
 	static int x = 10;
 	static int y = 8;
+
+	static int num1 = 5;
+	static int[] num1Arr = {4,1,5,2,3};
+	static int num2 = 5;
+	static int[] num2Arr = {1,3,7,9,5};
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int n = 18;
@@ -19,6 +24,14 @@ public class binarySearch {
 
 		System.out.println(solve(0,0,0));
 		System.out.println(Game(99000,0));
+		Arrays.sort(num1Arr);
+
+		System.out.printf("\nBOJ_1920");
+		for(int i = 0;i<num2Arr.length;i++) {
+			if(Number(num2Arr[i])>=0) System.out.println(1);
+			else System.out.println(0);
+
+		}
 		sc.close();
 	}
 	private static int Search(int n,int left,int right) {
@@ -51,5 +64,18 @@ public class binarySearch {
 			z = (int)((float)y/x*100);
 		}
 		return count;
+	}
+	private static int Number(int n) {
+		int left = 0;
+		int right = num1Arr.length-1;
+		while(left <= right) {
+			int mid = (left+right)/2;
+			if(n<num1Arr[mid]) {
+				right = mid-1;
+			}else if(n>num1Arr[mid]) {
+				left = mid+1;
+			}else return mid;
+		}
+		return -1;
 	}
 }
