@@ -25,6 +25,7 @@ public class BOJ_11057 {
 		System.out.println(solution(1));
 		System.out.println(solution(2));
 		System.out.println(solution(3));
+		System.out.println(solution(4));
 	}
 
 }
