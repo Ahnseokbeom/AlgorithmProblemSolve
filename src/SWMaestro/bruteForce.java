@@ -2,6 +2,7 @@ package SWMaestro;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashSet;
 
 public class bruteForce {
 	public static void main(String[] args) {
@@ -33,6 +34,10 @@ public class bruteForce {
 		test3(Itest3,0,Itest3.length-1);
 
 		int[] SetTest3 = {1,2,3};
+		HashSet<int[]> set = new HashSet<>();
+		for(int i = 0;i<SetTest3.length;i++) {
+			set.add(new int[] {1,2,3});
+		}
 
 	}
 	public static void test1(int[] arr, int cur, int cnt,int n,int limit) {
@@ -113,6 +118,15 @@ public class bruteForce {
 		arr[b] = temp;
 	}
 
-//	public static void setTest3(int[] arr, int )
+	public static void setTest3(HashSet<int[]> set, int left, int right) {
+		if(left==right) {
+			System.out.println(set);
+		}else {
+			for(int i = left;i<=right;i++) {
+				setTest3(set,left,i);
+
+			}
+		}
+	}
 
 }
