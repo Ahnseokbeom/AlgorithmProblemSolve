@@ -16,12 +16,8 @@ public class Level2_3 {
 		while(true) {
 			int rotation = arr[0][0]+k;
 			for(int i = 0;i<arr.length;i++) {
-				if(rotation <= arr[i][0]) {
-
-				}
 			}
 		}
-		return answer;
 	}
 	public static void main(String[] args) {
 		int n = 4;
