@@ -1,21 +1,33 @@
 package programmers;
 
-import java.util.HashSet;
+import java.util.Arrays;
 
 public class PRO_3_BestSet {
 	public static void main(String[] args) {
-		// 1 4 4 / 1 2 6 / 1 3 5 / 2 3 4
-		int n = 2;
-		int s = 9;
-		int[] answer = {};
-		HashSet<int[]> set = new HashSet<>();
-		for(int i = 1;i<s/n;i++) {
-			int j = i+1;
-			while(true) {
-				if(j==s-s/n) break;
-				set.add(new int[] {i,j});
-			}
-		}
-		System.out.println(s/2);
+		int n1 = 2;
+		int s1 = 9;
+		System.out.println(Arrays.toString(solution(n1,s1)));
+
+		int n2 = 2;
+		int s2 = 1;
+		System.out.println(Arrays.toString(solution(n2,s2)));
+
+		int n3 = 2;
+		int s3 = 8;
+		System.out.println(Arrays.toString(solution(n3,s3)));
 	}
+	public static int[] solution(int n, int s) {
+		if(n > s)
+	          return new int[]{-1};
+
+		int[] answer = new int[n];
+		for(int i=0; i<answer.length; i++)
+	          answer[i] = s/n;
+
+		for(int i=0; i<s%n; i++)
+	          answer[i] ++;
+
+		Arrays.sort(answer);
+       return answer;
+    }
 }
