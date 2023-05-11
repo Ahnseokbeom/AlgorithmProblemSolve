@@ -1,8 +1,10 @@
 package BOJ;
 
+import java.io.IOException;
+
 public class BOJ_19532 {
 	public static StringBuilder sb = new StringBuilder();
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException{
 		System.out.println(solution(1, 3, -1, 4, 1, 7));
 		sb.delete(0, sb.length());
 		System.out.println(solution(2, 5, 8, 3, -4, -11));
