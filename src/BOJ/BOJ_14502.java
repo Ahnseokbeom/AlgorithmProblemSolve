@@ -12,7 +12,7 @@ public class BOJ_14502 {
     public static int[] dx = {-1, 1, 0, 0};
     public static int[] dy = {0, 0, -1, 1};
     public static int[][] map;
-    public static int[][] virusMap;
+    public static int[][] virus;
     public static int max = Integer.MIN_VALUE;
 
     public static void main(String[] args) throws IOException {
@@ -55,24 +55,15 @@ public class BOJ_14502 {
     // 바이러스 퍼뜨리기
     public static void bfs() {
         Queue<int[]> q = new LinkedList<>();
-        virusMap = new int[n][m];
-        // virusMap 만드는 이유
-        // 벽이 세개 세워질 때마다 bfs를 실행해야하므로
-        // 벽이 세워진 map을 복사해서 써야함 (초기화 용도)
+        virus = new int[n][m];
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
-                virusMap[i][j] = map[i][j];
-                if (virusMap[i][j] == 2) {
+                virus[i][j] = map[i][j];
+                if (virus[i][j] == 2) {
                     q.add(new int[]{i, j});
                 }
             }
         }
-
-		// // map 복제
-		//int[][] virusMap = new int[n][m];
-		//for (int i = 0; i < n; i++) {
-		//	virusMap[i] = Arrays.copyOf(map[i], m);
-		//}
 
         while (!q.isEmpty()) {
             int[] tmp = q.poll();
@@ -83,8 +74,8 @@ public class BOJ_14502 {
                 int nx = x + dx[i];
                 int ny = y + dy[i];
 
-                if (nx >= 0 && nx < n && ny >= 0 && ny < m && virusMap[nx][ny] == 0) {
-                    virusMap[nx][ny] = 2;
+                if (nx >= 0 && nx < n && ny >= 0 && ny < m && virus[nx][ny] == 0) {
+                    virus[nx][ny] = 2;
                     q.add(new int[]{nx, ny});
                 }
             }
@@ -92,7 +83,7 @@ public class BOJ_14502 {
         int count = 0;
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
-                if (virusMap[i][j] == 0) {
+                if (virus[i][j] == 0) {
                     count++;
                 }
             }
