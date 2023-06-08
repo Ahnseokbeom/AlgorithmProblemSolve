@@ -8,10 +8,11 @@ import java.util.Comparator;
 import java.util.StringTokenizer;
 
 public class BOJ_1931 {
+	public static int answer;
 	public static void main(String[] args) throws IOException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int n = Integer.parseInt(br.readLine());
-		int answer = 0;
+		answer = 0;
 		int[][] arr = new int[n][2];
 
 		for(int i = 0;i<n;i++) {
@@ -19,6 +20,9 @@ public class BOJ_1931 {
 			arr[i][0] = Integer.parseInt(st.nextToken());
 			arr[i][1] = Integer.parseInt(st.nextToken());
 		}
+		System.out.println(solution(n, arr));
+	}
+	public static int solution(int n, int[][] arr) {
 		Arrays.sort(arr,new Comparator<int[]>() {
 			@Override
 			public int compare(int[] o1, int[] o2) {
@@ -33,9 +37,7 @@ public class BOJ_1931 {
 				end = arr[i][1];
 			}
 		}
-		System.out.println(answer);
-
-
+		return answer;
 	}
 
 }
