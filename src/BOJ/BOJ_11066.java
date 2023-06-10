@@ -17,15 +17,15 @@ public class BOJ_11066 {
 			dp[i-1][i] = 0;
 			Karr[i-1][i] = i;
 		}
-		for (int d = 2; d <= K; d++) {
-            for (int i = 0; i + d <= K; i++) {
-                int j = i + d;
-                dp[i][j] = Integer.MAX_VALUE;
-                for (int k = Karr[i][j - 1]; k <= Karr[i + 1][j]; k++) {
-                    int v = dp[i][k] + dp[k][j] + (sum[j] - sum[i]);
-                    if (dp[i][j] > v) {
-                        dp[i][j] = v;
-                        Karr[i][j] = k;
+		for (int a = 2; a <= K; a++) {
+            for (int b = 0; a + b <= K; b++) {
+                int c = a + b;
+                dp[b][c] = Integer.MAX_VALUE;
+                for (int k = Karr[b][c - 1]; k <= Karr[b + 1][c]; k++) {
+                    int v = dp[b][k] + dp[k][c] + (sum[c] - sum[b]);
+                    if (dp[b][c] > v) {
+                        dp[b][c] = v;
+                        Karr[b][c] = k;
                     }
                 }
             }
