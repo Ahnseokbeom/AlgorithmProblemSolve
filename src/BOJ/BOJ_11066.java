@@ -1,9 +1,23 @@
 package BOJ;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
+
 public class BOJ_11066 {
 	static int[] sum;
 	static int[][] dp, Karr;
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException{
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st;
+		int t = Integer.parseInt(br.readLine());
+		int K = Integer.parseInt(br.readLine());
+		while(t-->0) {
+			for(int i = 0;i<K;i++) {
+
+			}
+		}
 		System.out.println(solution(4, new int[] {0,40,30,30,50}));
 		System.out.println(solution(15, new int[] {0,1,21,3,4,5,35,5,4,3,5,98,21,14,17,32}));
 
