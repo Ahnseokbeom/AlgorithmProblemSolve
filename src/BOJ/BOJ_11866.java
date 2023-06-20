@@ -13,6 +13,7 @@ public class BOJ_11866 {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		Queue<Integer> queue = new LinkedList<Integer>();
 		StringTokenizer st = new StringTokenizer(br.readLine());
+		StringBuilder sb = new StringBuilder();
 		int n = Integer.parseInt(st.nextToken());
 		int k = Integer.parseInt(st.nextToken());
 		ArrayList<Integer> list = new ArrayList<Integer>();
@@ -26,14 +27,15 @@ public class BOJ_11866 {
 			}
 			list.add(queue.poll());
 		}
-		System.out.print("<");
+		sb.append("<");
 		for(int i = 0;i<list.size();i++) {
 			if(i==list.size()-1) {
-				System.out.print(list.get(i)+">");
+				sb.append(list.get(i)+">");
 			}else {
-				System.out.print(list.get(i)+", ");
+				sb.append(list.get(i)+", ");
 			}
 		}
+		System.out.println(sb.toString());
 	}
 
 }
