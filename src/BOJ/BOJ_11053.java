@@ -19,14 +19,10 @@ public class BOJ_11053 {
 		for(int i = 0;i<a;i++) {
 			dp[i] = 1;
 			for(int j = 0;j<i;j++) {
-				if(list[j]<list[i] && dp[i] <= dp[j]) {
-					dp[i] = dp[j]+1;
-				}
+				if(list[j]<list[i] && dp[i] <= dp[j]) dp[i] = dp[j]+1;
 			}
 		}
-		for(int i = 0;i<a;i++) {
-			max = Math.max(max, dp[i]);
-		}
+		for(int i : dp) max = Math.max(i, max);
 		System.out.println(max);
 	}
 
