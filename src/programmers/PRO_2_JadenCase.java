@@ -14,6 +14,7 @@ public class PRO_2_JadenCase {
 					answer+=' ';
 				}
 			}
+	        arr.clear();
 	        return answer;
 	    }
 	}
@@ -21,8 +22,8 @@ public class PRO_2_JadenCase {
 		String[] str = s.split(" ");
         arr = new ArrayList<>(Arrays.asList(str));
         for(int i = 0;i<arr.size();i++) {
-			char c = arr.get(i).length()==0?'#':arr.get(i).charAt(0);
-			if(c=='#') {
+			char c = arr.get(i).length()==0?'!':arr.get(i).charAt(0);
+			if(c=='!') {
 				answer+=' ';
 				continue;
 			}else {

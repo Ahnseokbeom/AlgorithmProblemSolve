@@ -1,7 +1,11 @@
 package programmers;
 
 public class PRO_2_N_LCM {
-	public int solution(int[] arr) {
+	public static void main(String[] args) {
+		System.out.println(solution(new int[] {2,6,8,14}));
+		System.out.println(solution(new int[] {1,2,3}));
+	}
+	public static int solution(int[] arr) {
         int answer = arr[0];
         for(int i = 1;i<arr.length;i++) {
 			answer = lcm(answer,arr[i]);
