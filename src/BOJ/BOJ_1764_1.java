@@ -12,24 +12,20 @@ public class BOJ_1764_1 {
 	public static void main(String[] args) throws IOException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = new StringTokenizer(br.readLine()," ");
-		HashSet<String> hs = new HashSet<String>();
-		ArrayList<String> arr = new ArrayList<String>();
-		int n = Integer.parseInt(st.nextToken()); // ������ ���� ��� ��
-		int m = Integer.parseInt(st.nextToken()); // ������ ���� ��� ��
+		int n = Integer.parseInt(st.nextToken()); // 듣지 못한 사람
+		int m = Integer.parseInt(st.nextToken()); // 보지 못한 사람
+		HashSet<String> set = new HashSet<>();
+		ArrayList<String> list = new ArrayList<>();
 		for(int i = 0;i<n;i++) {
-			hs.add(br.readLine());
+			set.add(br.readLine());
 		}
 		for(int i = 0;i<m;i++) {
 			String s = br.readLine();
-			if(hs.contains(s)) {
-				arr.add(s);
-			}
+			if(set.contains(s)) list.add(s);
 		}
-		Collections.sort(arr);
-		System.out.println(arr.size());
-		for(int i = 0;i<arr.size();i++) {
-			System.out.println(arr.get(i));
-		}
+		Collections.sort(list);
+		System.out.println(list.size());
+		for(int i = 0;i<list.size();i++) System.out.println(list.get(i));
 	}
 
 }

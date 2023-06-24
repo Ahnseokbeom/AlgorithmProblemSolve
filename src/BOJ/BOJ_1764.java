@@ -7,22 +7,21 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.StringTokenizer;
 
-//����(�ð��ʰ� - 2��)
 public class BOJ_1764 {
 	public static void main(String[] args) throws IOException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = new StringTokenizer(br.readLine()," ");
-		int n = Integer.parseInt(st.nextToken()); // �赵 ���� ��� ��
-		int m = Integer.parseInt(st.nextToken()); // ������ ���� ��� ��
+		int n = Integer.parseInt(st.nextToken());
+		int m = Integer.parseInt(st.nextToken());
 		String[] Nlist = new String[n];
 		String[] Mlist = new String[m];
 		ArrayList<String> list = new ArrayList<String>();
-		for(int i = 0;i<n;i++) { // ���� ���� ��� 
+		for(int i = 0;i<n;i++) {
 			st = new StringTokenizer(br.readLine());
 			Nlist[i] = st.nextToken();
 		}
-		
-		for(int i = 0;i<m;i++) { // ���� ���� ���
+
+		for(int i = 0;i<m;i++) {
 			st = new StringTokenizer(br.readLine());
 			Mlist[i] = st.nextToken();
 		}
@@ -40,7 +39,7 @@ public class BOJ_1764 {
 		for(int i = 0;i<list.size();i++) {
 			System.out.println(list.get(i));
 		}
-		
+
 	}
 
 }
