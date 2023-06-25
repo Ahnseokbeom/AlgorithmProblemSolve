@@ -7,8 +7,8 @@ import java.util.Scanner;
 public class BOJ_14235 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int n = sc.nextInt(); // ������ ����
-		PriorityQueue<Integer> pq = new PriorityQueue<Integer>(Collections.reverseOrder()); // �ִ� ��
+		int n = sc.nextInt();
+		PriorityQueue<Integer> pq = new PriorityQueue<Integer>(Collections.reverseOrder());
 		StringBuilder sb = new StringBuilder();
 		for(int i = 0;i<n;i++) {
 			int a = sc.nextInt();

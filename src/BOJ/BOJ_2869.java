@@ -12,10 +12,10 @@ public class BOJ_2869 {
 		int a = Integer.parseInt(st.nextToken());
 		int b = Integer.parseInt(st.nextToken());
 		int v = Integer.parseInt(st.nextToken());
-		
-		int count = (v-b)/(a-b); // �ϼ� ���
-		
-		if((v-b) % (a-b)!=0) count++; // �������� ������ 
+
+		int count = (v-b)/(a-b);
+
+		if((v-b) % (a-b)!=0) count++;
 
 		System.out.println(count);
 	}

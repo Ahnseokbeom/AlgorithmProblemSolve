@@ -7,7 +7,7 @@ import java.util.StringTokenizer;
 
 public class BOJ_15649 {
 	static boolean[] visited;
-	static int[] list; 
+	static int[] list;
 	static int n;
 	static int m;
 	static StringBuilder sb = new StringBuilder();
@@ -20,10 +20,10 @@ public class BOJ_15649 {
 		list = new int[m];
 		dfs(0);
 		System.out.println(sb);
-		
+
 	}
 	public static void dfs(int num) {
-		if(num==m) { // ���̰� �������� Ž���ߴ� �迭�� sb�� ����
+		if(num==m) {
 			for(int a : list) {
 				sb.append(a).append(" ");
 			}

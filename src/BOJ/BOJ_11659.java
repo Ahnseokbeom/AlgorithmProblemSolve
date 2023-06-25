@@ -2,28 +2,26 @@ package BOJ;
 
 import java.util.Scanner;
 
-// ���� �� ���ϱ� -- �ð��ʰ�(����)
 public class BOJ_11659 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		
-		int n = sc.nextInt(); // �迭 ũ�� �Է�
-		int m = sc.nextInt(); // �ݺ� Ƚ�� �Է�
-		int[] arr = new int[n]; // �迭 �ʱ�ȭ
-		
-		for(int a = 0;a<n;a++) { // �迭�� �� �ε����� �� �Է�
+
+		int n = sc.nextInt();
+		int m = sc.nextInt();
+		int[] arr = new int[n];
+
+		for(int a = 0;a<n;a++) {
 			arr[a] = sc.nextInt();
 		}
-		for(int b = 0;b<m;b++) { // �ݺ��� ���� �Է�
+		for(int b = 0;b<m;b++) {
 			int sum = 0;
 			int i = sc.nextInt();
 			int j = sc.nextInt();
-			for(int c = i-1;c<j;c++) { // �ݺ��Ǵ� ������ �������� �����ش�
+			for(int c = i-1;c<j;c++) {
 				sum+=arr[c];
 			}
-			System.out.println(sum); // �� ���
+			System.out.println(sum);
 		}
 		sc.close();
 	}
-
 }

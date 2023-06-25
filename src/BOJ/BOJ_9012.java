@@ -9,28 +9,28 @@ public class BOJ_9012 {
 	public static void main(String[] args) throws IOException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringBuilder sb = new StringBuilder();
-		int t = Integer.parseInt(br.readLine()); // �׽�Ʈ���̽� ����
+		int t = Integer.parseInt(br.readLine());
 		for(int i = 0;i<t;i++) {
-			sb.append(answer(br.readLine())+"\n"); // sb�� NO / YES �� ����
+			sb.append(answer(br.readLine())+"\n");
 		}
 		System.out.println(sb);
-		
+
 	}
-	public static String answer(String s) { // ��ȣ�� �Ǵ��ϴ� �Լ�
-		Stack<Character> stack = new Stack<Character>(); 
-		for(int i = 0;i<s.length();i++) { // s�� ũ�⸸ŭ �ݺ�
-			char c = s.charAt(i); // ���ڿ��� �� ���ڿ� ��
-			if(c == '(') { // '('�� ������
-				stack.push(c); // ���ÿ� ����
-			}else if(stack.empty()) { // ������ ���������
-				return "NO"; // NO ����
+	public static String answer(String s) {
+		Stack<Character> stack = new Stack<Character>();
+		for(int i = 0;i<s.length();i++) {
+			char c = s.charAt(i);
+			if(c == '(') {
+				stack.push(c);
+			}else if(stack.empty()) {
+				return "NO";
 			}else {
-				stack.pop(); // �� �� �ƴϸ� ����
+				stack.pop();
 			}
 		}
-		if(stack.empty()) { // ���� �۾��� ��ġ�� ������ ��������� YES ����
+		if(stack.empty()) {
 			return "YES";
 		}else
-			return "NO"; // �ƴϸ� NO ����
+			return "NO";
 	}
 }

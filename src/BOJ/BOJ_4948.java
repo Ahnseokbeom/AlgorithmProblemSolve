@@ -7,19 +7,19 @@ import java.io.InputStreamReader;
 public class BOJ_4948 {
 	public static void main(String[] args) throws IOException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		while(true) { // ���� �ݺ�
-			int count = 0; // �Ҽ��� ������ ���� ����
+		while(true) {
+			int count = 0;
 			int n = Integer.parseInt(br.readLine()); // n �Է�
-			if(n==0) break; // n�� 0�̸� while�� ����
-			for(int i = n+1;i<=n*2;i++){ // n+1 ~2n������ �Ҽ� ã��
+			if(n==0) break;
+			for(int i = n+1;i<=n*2;i++){
 				if(prime(i)==true) {
 					count++;
 				}
 			}
-			System.out.println(count); // �Ҽ� ���� ���
+			System.out.println(count);
 		}
 	}
-	public static boolean prime(int n) { // �Ҽ� ���ϴ� �Լ�
+	public static boolean prime(int n) {
 		if(n<2) {
 			return false;
 		}

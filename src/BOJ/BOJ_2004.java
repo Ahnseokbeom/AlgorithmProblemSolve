@@ -11,14 +11,14 @@ public class BOJ_2004 {
 		StringTokenizer st = new StringTokenizer(br.readLine()," ");
 		long n = Integer.parseInt(st.nextToken());
 		long m = Integer.parseInt(st.nextToken());
-		
-		long count5 = five(n) - five(n-m) - five(m); // ���ս�
-		long count2 = two(n) - two(n-m) - two(m);  // ���ս�
-		
+
+		long count5 = five(n) - five(n-m) - five(m);
+		long count2 = two(n) - two(n-m) - two(m);
+
 		System.out.println(Math.min(count5,count2));
-		
+
 	}
-	static long five(long num) { // 5�� ������ ���ϴ� ���
+	static long five(long num) {
 		int count = 0;
 		while(num >= 5) {
 			count+=num/5;
@@ -26,7 +26,7 @@ public class BOJ_2004 {
 		}
 		return count;
 	}
-	static long two(long num) { // 2�� ������ ���ϴ� ���
+	static long two(long num) {
 		int count = 0;
 		while(num>=2) {
 			count+=num/2;

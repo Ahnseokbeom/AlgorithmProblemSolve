@@ -5,12 +5,6 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-
-/*
- * 2���� N���� ��� ������ ���´�.
-���� ������ ���� �� �� ���� ���� ���� ã�´�. �̰��� P��� �ϰ�, �� ���� �Ҽ��̴�.
-P�� �����, ���� ������ ���� P�� ����� ũ�� ������� �����.
-���� ��� ���� ������ �ʾҴٸ�, �ٽ� 2�� �ܰ�� ����.*/
 public class BOJ_2960 {
 	public static void main(String[] args) throws IOException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -18,9 +12,9 @@ public class BOJ_2960 {
 		int n = Integer.parseInt(st.nextToken());
 		int k = Integer.parseInt(st.nextToken());
 		boolean[] prime = new boolean[n+1];
-		
+
 		int count = 0;
-		
+
 		for(int i = 2;i<=n;i++) {
 			prime[i] = true;
 		}
@@ -35,7 +29,7 @@ public class BOJ_2960 {
 				}
 			}
 		}
-		
+
 	}
 
 }

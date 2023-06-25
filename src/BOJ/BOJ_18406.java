@@ -22,6 +22,6 @@ public class BOJ_18406 {
 		}else {
 			System.out.println("READY");
 		}
+		sc.close();
 	}
-
 }

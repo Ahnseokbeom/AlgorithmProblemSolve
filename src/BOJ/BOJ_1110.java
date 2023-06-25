@@ -5,11 +5,11 @@ import java.util.Scanner;
 public class BOJ_1110 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int n = sc.nextInt(); // ���� �Է�
-		int temp = 0; // �ٲ�� ��
-		int answer = n; // ������ ���� �� 
-		int result = 0; // 1�� �ڸ�
-		int count = 0; // �ݺ� Ƚ��
+		int n = sc.nextInt();
+		int temp = 0;
+		int answer = n;
+		int result = 0;
+		int count = 0;
 		while(true) {
 			result = n%10;
 			n /=10;

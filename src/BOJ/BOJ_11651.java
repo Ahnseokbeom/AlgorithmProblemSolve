@@ -18,10 +18,10 @@ public class BOJ_11651 {
 			list[i][1] = Integer.parseInt(st.nextToken());
 		}
 		Arrays.sort(list, (a1, a2) -> {
-			if(a1[1] == a2[1]) { // y�� �����ϴٸ�
-				return a1[0] - a2[0]; // 0��° �ε��� �������� ����(����̸� ��ȯ �����̸� �״��)
+			if(a1[1] == a2[1]) {
+				return a1[0] - a2[0];
 			} else {
-				return a1[1] - a2[1]; // 0���� �������� �������� ����
+				return a1[1] - a2[1];
 			}
 		});
 		StringBuilder sb = new StringBuilder();
@@ -29,7 +29,7 @@ public class BOJ_11651 {
 			sb.append(list[i][0]+" "+list[i][1]).append("\n");
 		}
 		System.out.println(sb);
-		
+
 	}
 
 }

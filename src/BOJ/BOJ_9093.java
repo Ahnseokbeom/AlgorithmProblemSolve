@@ -12,7 +12,7 @@ public class BOJ_9093 {
 
         for (int i = 0; i < count; i++) {
             String sentence = sc.nextLine() + "\n";
-            Stack stack = new Stack<>();
+            Stack<Character> stack = new Stack<>();
 
             for (int j = 0; j < sentence.length(); j++) {
                 if (sentence.charAt(j) == ' ' || sentence.charAt(j) == '\n') {

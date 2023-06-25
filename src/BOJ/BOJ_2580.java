@@ -46,19 +46,19 @@ public class BOJ_2580 {
 		sudoku(row,col+1);
 	}
 	public static boolean check(int row, int col, int item) {
-		
-		for(int i = 0;i<9;i++) {// ���� �࿡ �ִ� ���� �� ��ġ�� �� �ִ��� Ȯ��
+
+		for(int i = 0;i<9;i++) {
 			if(arr[row][i]==item) {
 				return false;
 			}
 		}
-		for(int i = 0;i<9;i++) { // ���� ���� �ִ� ���� �� ��ġ�� �� �ִ��� Ȯ��
+		for(int i = 0;i<9;i++) {
 			if(arr[i][col]==item) {
 				return false;
 			}
 		}
-		int Rrow = (row/3)*3; // item�� ���� 3x3 ���� ù ��ġ
-		int Ccol = (col/3)*3; // item�� ���� 3x3 ���� ù ��ġ
+		int Rrow = (row/3)*3;
+		int Ccol = (col/3)*3;
 		for(int i = Rrow;i<Rrow+3;i++) {
 			for(int j = Ccol;j<Ccol+3;j++) {
 				if(arr[i][j]==item) {

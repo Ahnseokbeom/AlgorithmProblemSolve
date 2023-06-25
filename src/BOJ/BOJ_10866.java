@@ -9,10 +9,10 @@ public class BOJ_10866 {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int n = Integer.parseInt(br.readLine());
 		StringBuilder sb = new StringBuilder();
-		
+
 		for(int i = 0;i<n;i++) {
-			String[] s = br.readLine().split(" "); // s[0] , s[1]�� ���� ��, push_front 2�̸� push_front = s[0] , 2 = s[1]
-			
+			String[] s = br.readLine().split(" ");
+
 			switch(s[0]) {
 			case "push_front": push_front(Integer.parseInt(s[1])); break;
 			case "push_back": push_back(Integer.parseInt(s[1])); break;
@@ -30,24 +30,7 @@ public class BOJ_10866 {
 	static int front = 10000;
 	static int size = 0;
 	static int back = 10000;
-	
-	/*Deque�� ���� �տ� �ִ� ���Ҵ� front+1�̴�.
-	 * Deque �迭���� front�� ���������� ����Ű�� ��ġ�� �׻� ����д�.
-	 * ��, ���� �տ��ִ� ���Ҵ� front + 1�� �ȴ�.
-	 * 
-	 * ������ ���� front�� ���� ��ġ�� ���Ҹ� �ְ� �Ǹ� ������ ��
-	 * ���ܰ� �߻��Ѵ�.
-	 * 
-	 * ���ε��  push_front(3) �� �����Ϸ� �ϴµ� �ƹ� ���ҵ� ���� ��  
-	 * front--; ���ҽ�Ų �� deque[front] = 3; �� �Ǹ�
-	 * deque[9999] = 3; �� �ȴ�. �̶� front = 9999; back = 10000 �� �ȴ�.
-	 * 
-	 * ������, ���Ұ� �� ���� ���� ��� �ش� ���Ҵ� front ���� back ���Ұ� �ȴ�.
-	 * �̷��� ��츦 �����ϱ� ����
-	 * deque[front] �� ���Ҹ� ���� ��, front--; �� ���ش�.
-	 * 
-	 * ��������� front ��� ��ü�� deque[front + 1] ��ġ�� �ڸ��Ѵ�.*/
-	
+
 	static void push_front(int n) {
 		Deque[front] = n;
 		size++;
@@ -57,7 +40,7 @@ public class BOJ_10866 {
 		back++;
 		Deque[back] = n;
 		size++;
-		
+
 	}
 	static int pop_front() {
 		if(size==0) {

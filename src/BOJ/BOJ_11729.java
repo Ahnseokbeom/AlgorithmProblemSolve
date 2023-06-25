@@ -13,17 +13,12 @@ public class BOJ_11729 {
 		sc.close();
 	}
 	public static void hanoi(int n, int start, int mid, int to) {
-		//start = a / mid = b / to = c
-		//���� �ϳ��̰� 1�����
 		if(n==1) {
 			sb.append(start+" "+to+"\n");
 			return;
 		}
-		//a -> c�� �ű�ٰ� ���� / n-1���� b�� �ű��.
 		hanoi(n-1, start,to,mid);
-		// 1���� a���� c�� �ű��.
 		sb.append(start+" "+to+"\n");
-		//n-1������ b���� c�� �ű��.
 		hanoi(n-1,mid,start,to);
 	}
 

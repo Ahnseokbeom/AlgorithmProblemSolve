@@ -10,14 +10,13 @@ import java.util.Queue;
 public class BOJ_11286 {
 	public static void main(String[] args) throws IOException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		
+
 		int n = Integer.parseInt(br.readLine());
 		Queue<Integer> pq = new PriorityQueue<Integer>(new Comparator<Integer>() {
 			@Override
 			public int compare(Integer a, Integer b) {
 				if(Math.abs(a) > Math.abs(b)) {
 					return 1;
-					//���밪�� ������ ���� ���� �����Ѵ�.
 				}else if(Math.abs(a) == Math.abs(b)) {
 					return a-b;
 				}else {
@@ -40,5 +39,5 @@ public class BOJ_11286 {
 		}
 		System.out.println(sb);
 	}
-		
+
 }

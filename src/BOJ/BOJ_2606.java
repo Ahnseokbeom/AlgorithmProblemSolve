@@ -11,11 +11,11 @@ public class BOJ_2606 {
 	static int n;
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		n = sc.nextInt(); // ��ǻ�� ��
-		int m = sc.nextInt(); // ����� ��ǻ��
+		n = sc.nextInt();
+		int m = sc.nextInt();
 		check = new int[n+1][n+1];
 		visit = new boolean[n+1];
-		Arrays.fill(visit, false); // �湮����� ��� false�� �ʱ�ȭ
+		Arrays.fill(visit, false);
 		for(int i = 0;i<m;i++) {
 			int x = sc.nextInt();
 			int y = sc.nextInt();
@@ -25,7 +25,7 @@ public class BOJ_2606 {
 		sc.close();
 		bfs(1);
 	}
-	public static void bfs(int v) { // �ʺ�켱Ž�� ����
+	public static void bfs(int v) {
 		Queue<Integer> q = new LinkedList<Integer>();
 		visit[v] = true;
 		q.offer(v);

@@ -7,7 +7,7 @@ public class BOJ_11650 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
-		
+
 		int[][] list = new int[n][2];
 		for(int i = 0;i<n;i++) {
 			list[i][0] = sc.nextInt();
@@ -15,10 +15,10 @@ public class BOJ_11650 {
 		}
 		sc.close();
 		Arrays.sort(list, (a1, a2) -> {
-			if(a1[0] == a2[0]) { // x�� �����ϴٸ�
-				return a1[1] - a2[1]; // 0��° �ε��� �������� ����(����̸� ��ȯ �����̸� �״��)
+			if(a1[0] == a2[0]) {
+				return a1[1] - a2[1];
 			} else {
-				return a1[0] - a2[0]; // 0���� �������� �������� ����
+				return a1[0] - a2[0];
 			}
 		});
 		StringBuilder sb = new StringBuilder();

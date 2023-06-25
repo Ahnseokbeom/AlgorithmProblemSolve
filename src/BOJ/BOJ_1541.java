@@ -8,13 +8,13 @@ import java.util.StringTokenizer;
 public class BOJ_1541 {
 	public static void main(String[] args) throws IOException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		int sum = Integer.MAX_VALUE; // �ʱ���� 
+		int sum = Integer.MAX_VALUE;
 		StringTokenizer st = new StringTokenizer(br.readLine(),"-");
-		
+
 		while(st.hasMoreTokens()) {
 			int temp = 0;
 			StringTokenizer str = new StringTokenizer(st.nextToken(),"+");
-			
+
 			while(str.hasMoreTokens()) {
 				temp += Integer.parseInt(str.nextToken());
 			}

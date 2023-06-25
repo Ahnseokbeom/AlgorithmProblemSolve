@@ -8,11 +8,11 @@ public class BOJ_1748 {
 	public static void main(String[] args) throws IOException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int n = Integer.parseInt(br.readLine());
-		int count = 1; // ���� ��
-		int temp = 0; // �ڸ���
-		int len = 10; // �� �ڸ������� �Ǵ�
+		int count = 1;
+		int temp = 0;
+		int len = 10;
 		for(int i = 1;i<=n;i++) {
-			if(i==len) { // �ڸ����� �ٲ��ش�(10 -> 100 -> 1000...��������)
+			if(i==len) {
 				count++;
 				len = len*10;
 			}

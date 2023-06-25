@@ -18,9 +18,9 @@ public class BOJ_2167 {
 				list[a][b] = Integer.parseInt(st.nextToken());
 			}
 		}
-		int k = Integer.parseInt(br.readLine()); // ���� ���� �κ��� ����
+		int k = Integer.parseInt(br.readLine());
 		StringBuilder sb = new StringBuilder();
-		for(int a = 0;a<k;a++) { // (i,j)���� (x,y)������ �� ���ϱ�
+		for(int a = 0;a<k;a++) {
 			st = new StringTokenizer(br.readLine()," ");
 			int sum = 0;
 			int i = Integer.parseInt(st.nextToken());
@@ -35,7 +35,7 @@ public class BOJ_2167 {
 			sb.append(sum).append("\n");
 		}
 		System.out.println(sb);
-		
+
 	}
 
 }

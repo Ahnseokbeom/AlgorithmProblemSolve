@@ -10,13 +10,13 @@ public class BOJ_11399 {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int n = Integer.parseInt(br.readLine());
 		StringTokenizer st = new StringTokenizer(br.readLine()," ");
-		
+
 		int[] arr = new int[1001];
 		while(n-- > 0) {
 			arr[Integer.parseInt(st.nextToken())]++;
 		}
-		int pre = 0; // ���������� ���ð� ������
-		int sum = 0; // ����� ���ð� ����
+		int pre = 0;
+		int sum = 0;
 		for(int i = 0;i<1001;i++) {
 			while(arr[i]-- > 0) {
 				sum+=(i+pre);

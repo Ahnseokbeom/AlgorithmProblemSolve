@@ -9,9 +9,9 @@ public class BOJ_2525 {
 	public static void main(String[] args) throws IOException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = new StringTokenizer(br.readLine()," ");
-		int a = Integer.parseInt(st.nextToken()); // �ð�
-		int b = Integer.parseInt(st.nextToken()); // ��
-		int c = Integer.parseInt(br.readLine()); // �丮�� �ʿ��� �ð�
+		int a = Integer.parseInt(st.nextToken());
+		int b = Integer.parseInt(st.nextToken());
+		int c = Integer.parseInt(br.readLine());
 		int sum = b+c;
 		if(sum % 60 == 0) {
 			a+=sum/60;
@@ -25,7 +25,7 @@ public class BOJ_2525 {
 		if(a>=24) {
 			a -=24;
 		}
-		
+
 		System.out.println(a+" "+b);
 	}
 

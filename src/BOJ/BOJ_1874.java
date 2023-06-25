@@ -11,18 +11,18 @@ public class BOJ_1874 {
 		StringBuilder sb = new StringBuilder();
 		Stack<Integer> stack = new Stack<Integer>();
 		int n = Integer.parseInt(br.readLine());
-		
+
 		int start = 0;
-		
-		while(n-- > 0) { // n��ŭ �ݺ�
-			int num = Integer.parseInt(br.readLine()); // �� �Է� �ޱ�
-			if(num > start) { // start+1���� �Է¹��� num������ push �Ѵ�.
+
+		while(n-- > 0) {
+			int num = Integer.parseInt(br.readLine());
+			if(num > start) {
 				for(int i = start+1;i<=num;i++) {
 					stack.push(i);
 					sb.append("+").append("\n");
 				}
-				start = num; // ���� push�� �� �������� �����ϱ� ���ؼ� ���� �ʱ�ȭ
-			}else if(stack.peek()!=num) { // top�� �ִ� ���� num�� ���ٸ�
+				start = num;
+			}else if(stack.peek()!=num) {
 				System.out.println("NO");
 				System.exit(0);
 			}

@@ -9,7 +9,7 @@ public class BOJ_1181 {
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
 		String[] arr = new String[n];
-		
+
 		for(int i = 0;i<n;i++) {
 			arr[i] = sc.next();
 		}
@@ -24,7 +24,7 @@ public class BOJ_1181 {
 			}
 		});
 		System.out.println(arr[0]);
-		for(int i = 1;i<arr.length;i++) { // �ߺ� ����
+		for(int i = 1;i<arr.length;i++) {
 			if(!arr[i].equals(arr[i-1])) {
 				System.out.println(arr[i]);
 			}

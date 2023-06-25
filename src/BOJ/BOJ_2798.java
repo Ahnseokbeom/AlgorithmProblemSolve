@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class BOJ_2798 {
 	public static void main(String[] args){
 		Scanner sc = new Scanner(System.in);
-		int n = sc.nextInt(); // ī���� ����
-		int m = sc.nextInt(); // ���� ��ȣ
+		int n = sc.nextInt();
+		int m = sc.nextInt();
 		int[] arr = new int[n];
 		int max = 0;
 		int sum = 0;
@@ -23,8 +23,7 @@ public class BOJ_2798 {
 				}
 			}
 		}
+		sc.close();
 		System.out.println(max);
-		
 	}
-
 }

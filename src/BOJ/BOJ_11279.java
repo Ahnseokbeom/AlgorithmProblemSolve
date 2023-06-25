@@ -11,15 +11,15 @@ public class BOJ_11279 {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int n = Integer.parseInt(br.readLine());
 		StringBuilder sb = new StringBuilder();
-		
-		PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder()); // �켱������ ���� ���ڼ����� �켱����ť �ʱ�ȭ
-		
+
+		PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder());
+
 		for(int i = 0;i<n;i++) {
-			int x = Integer.parseInt(br.readLine()); //ť�� ���� ���� �Է�
-			if(x != 0) { // �ִ� ���� 0�� �ƴϸ� �켱����ť�� �߰�
+			int x = Integer.parseInt(br.readLine());
+			if(x != 0) {
 				pq.offer(x);
 			}
-			if(x == 0) { // �ִ� ���� 0�̸� �켱����ť�� �߰��ϰ� �켱������ ���� ���� sb�� �ְ� ����
+			if(x == 0) {
 				pq.offer(x);
 				sb.append(pq.poll()).append("\n");
 			}

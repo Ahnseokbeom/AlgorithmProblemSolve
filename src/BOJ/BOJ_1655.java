@@ -11,24 +11,24 @@ public class BOJ_1655 {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int n = Integer.parseInt(br.readLine());
 		StringBuilder sb = new StringBuilder();
-		PriorityQueue<Integer> minq = new PriorityQueue<Integer>(); // �켱������ ���� ��
-		PriorityQueue<Integer> maxq = new PriorityQueue<Integer>(Collections.reverseOrder()); // �켱������ ���� ��
-		
+		PriorityQueue<Integer> minq = new PriorityQueue<Integer>();
+		PriorityQueue<Integer> maxq = new PriorityQueue<Integer>(Collections.reverseOrder());
+
 		for(int i = 0;i<n;i++) {
-			int num = Integer.parseInt(br.readLine()); // ���� �Է�
-			if(minq.size()==maxq.size()) { // �ִ����� �ּ����� ũ�Ⱑ ������ �ִ����� ����
+			int num = Integer.parseInt(br.readLine());
+			if(minq.size()==maxq.size()) {
 				maxq.offer(num);
-			}else { // �׷��� ������ �ּ����� ����
+			}else {
 				minq.offer(num);
 			}
-			if(!minq.isEmpty() && !maxq.isEmpty()) { // �� �켱����ť�� ������� �ʴٸ�
-				if(minq.peek() < maxq.peek()) { // �ִ밪�� �ּҰ����� ũ�ٸ�
-					int temp = minq.poll(); // ������ ���� ��ȯ���ش�.
+			if(!minq.isEmpty() && !maxq.isEmpty()) {
+				if(minq.peek() < maxq.peek()) {
+					int temp = minq.poll();
 					minq.offer(maxq.poll());
 					maxq.offer(temp);
 				}
 			}
-			sb.append(maxq.peek()).append("\n"); // ��¹��� �ִ����� peek�κ��� �߰�
+			sb.append(maxq.peek()).append("\n");
 		}
 		System.out.println(sb);
 

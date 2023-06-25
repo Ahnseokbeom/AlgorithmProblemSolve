@@ -15,7 +15,7 @@ public class BOJ_7576 {
 	static int[] dx = {-1,1,0,0};
 	static int[] dy = {0,0,1,-1};
 	static Queue<int[]> q;
-	
+
 	public static void main(String[] args) throws IOException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = new StringTokenizer(br.readLine());
@@ -29,7 +29,7 @@ public class BOJ_7576 {
 			}
 		}
 		q = new LinkedList<int[]>();
-		//�丶�� �翡�� 1�� �߰��ϸ� ť�� �߰�(�� ������ ���ؼ� ��𼭺��� ��������� ���Ѵ�.)
+		//토마토 밭에서 1을 발견하면 큐에 추가(이 과정을 통해서 어디서부터 출발할지를 정한다.)
 		for(int i = 0;i<n;i++) {
 			for(int j = 0;j<m;j++) {
 				if(tomato[i][j]==1) {
@@ -47,26 +47,25 @@ public class BOJ_7576 {
 			for(int i = 0;i<4;i++) {
 				int nextX = nowX+dx[i];
 				int nextY = nowY+dy[i];
-				if(nextX < 0 || nextY < 0 || nextX > n-1 || nextY > m-1) { // ������ ����� continue
+				if(nextX < 0 || nextY < 0 || nextX > n-1 || nextY > m-1) { // 범위를 벗어나면 continue
 					continue;
 				}
-				if(tomato[nextX][nextY] != 0) continue; // �丶�䰡 ���ų� ���� �丶���� continue
-				else // �׷��� ���� ��쿡�� ť�� ���� ĭ ���� �� ���� ĭ �ε��� �߰�
+				if(tomato[nextX][nextY] != 0) continue; // 토마토가 없거나 익은 토마토라면 continue
+				else // 그렇지 않은 경우에는 큐에 다음 칸 갱신 후 다음 칸 인덱스 추가
 					tomato[nextX][nextY] = tomato[nowX][nowY]+1;
 					q.offer(new int[] {nextX,nextY});
 			}
 		}
 		for(int i = 0;i<n;i++) {
 			for(int j = 0;j<m;j++) {
-				if(tomato[i][j]==0) { // ������ �� ���� �丶�䰡 �����Ѵٸ� -1��� �� ����
+				if(tomato[i][j]==0) { // 끝까지 안 익은 토마토가 존재한다면 -1출력 후 종료
 					System.out.println(-1);
 					System.exit(0);
-				}	
-				max = Math.max(max, tomato[i][j]); // max(�ϼ�)���� ������ �ϼ� ��� �ֱ�
+				}
+				max = Math.max(max, tomato[i][j]); // max(일수)에는 지나간 일수 계속 넣기
 			}
-			
-		}
-		System.out.println(max-1); // �� �;��ٸ� �ϼ� ���
-	}
 
+		}
+		System.out.println(max-1); // 다 익었다면 일수 출력
+	}
 }

@@ -10,7 +10,7 @@ public class BOJ_1920 {
 	public static int[] list;
 	public static void main(String[] args) throws IOException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		
+
 		int n = Integer.parseInt(br.readLine());
 		StringTokenizer st = new StringTokenizer(br.readLine()," ");
 		list = new int[n];
@@ -19,7 +19,7 @@ public class BOJ_1920 {
 		}
 		int m = Integer.parseInt(br.readLine());
 		Arrays.sort(list);
-		
+
 		st = new StringTokenizer(br.readLine()," ");
 		StringBuilder sb = new StringBuilder();
 		for(int i = 0;i<m;i++) {
@@ -31,23 +31,23 @@ public class BOJ_1920 {
 		}
 		System.out.println(sb);
 	}
-	
+
 	public static int search(int key) {
-		int low = 0; //���� �� �ε���
-		int high = list.length-1; // ������ �� �ε���
-		
+		int low = 0;
+		int high = list.length-1;
+
 		while(low <= high) {
-			int mid = (low+high)/2; // �߰���ġ
-			if(key < list[mid]) {//key���� ���� ���
-				high = mid-1; // �ε��� ������ �� ���� �߰���ġ-1�� �������ش�
+			int mid = (low+high)/2;
+			if(key < list[mid]) {
+				high = mid-1;
 			}
-			else if(key > list[mid]) { // key ���� Ŭ ���
-				low = mid+1;// �ε��� ���� �� ���� �߰���ġ +1�� �������ش�
-			}else { // key���� �߰����� ���� ���
-				return mid; 
+			else if(key > list[mid]) {
+				low = mid+1;
+			}else {
+				return mid;
 			}
 		}
-		return -1; // ���� �������� ���� ���
+		return -1;
 	}
 
 }
