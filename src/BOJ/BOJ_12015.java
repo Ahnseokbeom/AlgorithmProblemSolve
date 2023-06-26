@@ -7,17 +7,22 @@ import java.util.ArrayList;
 import java.util.StringTokenizer;
 
 public class BOJ_12015 {
+	static ArrayList<Integer> list;
+	static int[] arr;
 	public static void main(String[] args) throws IOException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int n = Integer.parseInt(br.readLine());
-		int[] arr = new int[n];
-		ArrayList<Integer> list = new ArrayList<>();
+		arr = new int[n];
+		list = new ArrayList<>();
 		list.add(0);
 
 		StringTokenizer st = new StringTokenizer(br.readLine()," ");
 		for(int i = 0;i<n;i++) {
 			arr[i] = Integer.parseInt(st.nextToken());
 		}
+		System.out.println(BinarySearch(n));
+	}
+	public static int BinarySearch(int n) {
 		for(int i = 0;i<n;i++) {
 			if(list.get(list.size()-1)<arr[i]) list.add(arr[i]);
 			else {
@@ -34,6 +39,7 @@ public class BOJ_12015 {
 				list.set(right, arr[i]);
 			}
 		}
-		System.out.println(list.size()-1);
+		System.out.println(list);
+		return list.size()-1;
 	}
 }
