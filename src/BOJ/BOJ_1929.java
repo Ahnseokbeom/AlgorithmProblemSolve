@@ -13,26 +13,15 @@ public class BOJ_1929 {
 		int m = Integer.parseInt(st.nextToken());
 		int n = Integer.parseInt(st.nextToken());
 		ArrayList<Integer> list = new ArrayList<Integer>();
-		for(int i = m;i<=n;i++) {
-			if(prime(i)==true) {
-				list.add(i);
-			}
-		}
-		for(int i = 0;i<list.size();i++) {
-			System.out.println(list.get(i));
-		}
+		for(int i = m;i<=n;i++) if(prime(i)==true) list.add(i);
+		for(int i = 0;i<list.size();i++) System.out.println(list.get(i));
 	}
-	
-	
+
 	public static boolean prime(int n) {
-		if(n<2) {
-			return false;
-		}
-		if(n==2) {
-			return true;
-		}
-		for(int j = 2;j<=Math.sqrt(n+1);j++) {
-			if(n%j==0) {
+		if(n<2) return false;
+		if(n==2) return true;
+		for(int i = 2;i<=Math.sqrt(n+1);i++) {
+			if(n%i==0) {
 				return false;
 			}
 		}

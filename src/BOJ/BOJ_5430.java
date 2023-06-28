@@ -5,48 +5,51 @@ import java.util.LinkedList;
 import java.util.Scanner;
 
 public class BOJ_5430 {
+	static StringBuilder sb;
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int T = sc.nextInt();
-
-		for(int i = 0;i<T;i++) {
-			String P = sc.next();
+		int t = sc.nextInt();
+		for(int i = 0;i<t;i++) {
+			String p = sc.next();
 			int n = sc.nextInt();
 			String arr = sc.next();
-			Deque<Integer> q = new LinkedList<>();
+			Deque<Integer> dq = new LinkedList<>();
 			for(String s : arr.substring(1, arr.length()-1).split(",")) {
 				if(!s.equals("")) {
-					q.offer(Integer.valueOf(s));
+					dq.offer(Integer.valueOf(s));
 				}
 			}
-			System.out.println(AC(q,P));
+			AC(dq,p);
+			System.out.println(sb);
 		}
 		sc.close();
 	}
-	static String AC(Deque<Integer> q, String s) {
+	static StringBuilder AC(Deque<Integer> dq, String s) {
+		sb = new StringBuilder();
 		boolean reverse = false;
 		for(char c : s.toCharArray()) {
 			if(c == 'R') {
 				reverse = !reverse;
 			}else {
-				if(q.size()==0) {
-					return "error";
+				if(dq.size()==0) {
+					sb.append("error");
+					return sb;
 				}
-				if(reverse == true) {
-					q.removeLast();
+				if(reverse) {
+					dq.removeLast();
 				}else {
-					q.removeFirst();
+					dq.removeFirst();
 				}
 			}
 		}
-		StringBuilder sb = new StringBuilder("[");
-		while(!q.isEmpty()) {
-			sb.append(reverse ? q.removeLast() : q.removeFirst());
-			if(q.size()!=0) {
+		sb.append("[");
+		while(!dq.isEmpty()) {
+			sb.append(reverse ? dq.removeLast() : dq.removeFirst());
+			if(dq.size()!=0) {
 				sb.append(",");
 			}
 		}
 		sb.append("]");
-		return sb.toString();
+		return sb;
 	}
 }
