@@ -1,25 +1,17 @@
 package programmers;
 
 public class PRO_1_PhoneNumberBlind {
-	class Solution {
-	    public String solution(String phone_number) {
-	        String answer = "";
+	    public static String solution(String phone_number) {
+	    	String answer = "";
+	        for(int i = 0;i<phone_number.length()-4;i++) answer +="*";
+	        answer += phone_number.substring(phone_number.length()-4,phone_number.length());
 	        return answer;
 	    }
-	}
 	public static void main(String[] args) {
-		String phone = "01033334444";
-		String s = "";
-		for(int i = 0;i<phone.length();i++) {
-			if(i>=phone.length()-4) {
-				s+=phone.charAt(i);
-			}else {
-				s+="*";
-			}
-		}
-		System.out.println(s);
-		s = phone.replaceAll(phone.substring(0, phone.length()-4), "*");
-		System.out.println(s);
+		String phone1 = "01033334444";
+		System.out.println(solution(phone1));
+		String phone2 = "027778888";
+		System.out.println(solution(phone2));
 	}
 
 }
