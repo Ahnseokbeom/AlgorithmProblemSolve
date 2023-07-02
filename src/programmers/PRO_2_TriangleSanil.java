@@ -4,14 +4,11 @@ import java.util.Arrays;
 
 public class PRO_2_TriangleSanil {
 	public static void main(String[] args) {
-		int n1 = 4;
-		System.out.println(Arrays.toString(solution(n1)));
+		System.out.println(Arrays.toString(solution(4)));
 
-		int n2 = 5;
-		System.out.println(Arrays.toString(solution(n2)));
+		System.out.println(Arrays.toString(solution(5)));
 
-		int n3 = 6;
-		System.out.println(Arrays.toString(solution(n3)));
+		System.out.println(Arrays.toString(solution(6)));
 	}
 	public static int[] solution(int n) {
 		int sum = (n*(n+1))/2;
@@ -21,11 +18,11 @@ public class PRO_2_TriangleSanil {
         int x = -1,y = 0;
         for(int i = 0;i<n;i++) {
         	for(int j = i;j<n;j++) {
-        		if(i%3==0) ++x;
-        		else if(i%3==1) ++y;
+        		if(i%3==0) x++;
+        		else if(i%3==1) y++;
         		else if(i%3==2) {
-        			--x;
-        			--y;
+        			x--;
+        			y--;
         		}
         		arr[x][y] = num++;
         	}
