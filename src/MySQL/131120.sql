@@ -1,6 +1,6 @@
-SELECT member_id, member_name, gender, date_format(date_of_birth,'%Y-%m-%d')
-from member_profile
-where date_format(date_of_birth, "%m") = '03'
-and gender = 'W'
-and tlno is not null
-order by member_id;
+SELECT MEMBER_ID, MEMBER_NAME, GENDER, DATE_FORMAT(DATE_OF_BIRTH,'%Y-%m-%d')
+from MEMBER_PROFILE
+where DATE_FORMAT(DATE_OF_BIRTH, "%m") = '03'
+and GENDER = 'W'
+and TLNO is NOT NULL
+order by MEMBER_ID;
