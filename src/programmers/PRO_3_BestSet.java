@@ -21,13 +21,11 @@ public class PRO_3_BestSet {
 	          return new int[]{-1};
 
 		int[] answer = new int[n];
-		for(int i=0; i<answer.length; i++)
-	          answer[i] = s/n;
+		for(int i=0; i<answer.length; i++) answer[i] = s/n;
 
-		for(int i=0; i<s%n; i++)
-	          answer[i] ++;
+		for(int i=0; i<s%n; i++) answer[i]++;
 
 		Arrays.sort(answer);
-       return answer;
+		return answer;
     }
 }
