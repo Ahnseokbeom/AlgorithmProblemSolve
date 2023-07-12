@@ -8,18 +8,29 @@ import java.util.Stack;
 import java.util.StringTokenizer;
 
 public class BOJ_14003 {
+	static ArrayList<Integer> list = new ArrayList<>();
+	static int[] arr;
+	static int[] dp;
+	static int n;
+	static Stack<Integer> stack = new Stack<>();
 	public static void main(String[] args) throws IOException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		ArrayList<Integer> list = new ArrayList<>();
+
 		list.add(Integer.MIN_VALUE);
-		int n = Integer.parseInt(br.readLine());
-		int[] arr = new int[n];
-		int[] dp = new int[n];
+		n = Integer.parseInt(br.readLine());
+		arr = new int[n];
+		dp = new int[n];
+
 		StringTokenizer st = new StringTokenizer(br.readLine()," ");
 		for(int i = 0;i<n;i++) {
 			arr[i] = Integer.parseInt(st.nextToken());
 		}
+		System.out.println(len());
+		System.out.println(list);
 
+		check(list.size()-1);
+	}
+	public static int len() {
 		for(int i = 0;i<n;i++) {
 			if(list.get(list.size()-1) < arr[i]) {
 				list.add(arr[i]);
@@ -40,10 +51,9 @@ public class BOJ_14003 {
 				dp[i] = right;
 			}
 		}
-		System.out.println(list.size()-1);
-
-		int size = list.size()-1;
-		Stack<Integer> stack = new Stack<>();
+		return list.size()-1;
+	}
+	public static void check(int size) {
 		for(int i = n-1;i>=0;i--) {
 			if(dp[i]==size) {
 				size--;
