@@ -3,7 +3,11 @@ package programmers;
 import java.util.Arrays;
 
 public class PRO_3_NumberGame {
-	public int solution(int[] A, int[] B) {
+	public static void main(String[] args) {
+		System.out.println(solution(new int[] {5,1,3,7}, new int[] {2,2,6,8}));
+		System.out.println(solution(new int[] {2,2,2,2}, new int[] {1,1,1,1}));
+	}
+	public static int solution(int[] A, int[] B) {
         Arrays.sort(A);
         Arrays.sort(B);
 

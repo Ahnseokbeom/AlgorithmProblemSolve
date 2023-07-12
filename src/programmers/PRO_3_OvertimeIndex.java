@@ -1,28 +1,27 @@
 package programmers;
 
-import java.util.Arrays;
 import java.util.Collections;
+import java.util.PriorityQueue;
 
 public class PRO_3_OvertimeIndex {
 	public static void main(String[] args) {
-		int n = 4;
-		int[] works = {4,3,3};
-		long sum = 0;
-		Integer[] result = new Integer[works.length];
-		for(int i = 0;i<works.length;i++) {
-			result[i] = works[i];
-			sum+=works[i];
-		}
-		if(sum<=n) System.out.println(0);
-		while(n-->0) {
-			Arrays.sort(result,Collections.reverseOrder());
-			result[0]--;
-		}
-		int answer = 0;
-		for(int i = 0;i<result.length;i++) {
-			answer+=Math.pow(result[i], 2);
-		}
-		System.out.println(answer);
+		System.out.println(solution(4, new int[] {4,3,3}));
+		System.out.println(solution(1, new int[] {2,1,2}));
+		System.out.println(solution(3, new int[] {1,1}));
 	}
+	public static long solution(int n, int[] works) {
+        PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder());
+		for(int i : works) pq.offer(i);
 
+		while(n-->0) {
+			int max = pq.poll();
+			if(max <= 0) break;
+			pq.offer(max-1);
+		}
+		long answer = 0;
+		while(!pq.isEmpty()) {
+			answer+=Math.pow(pq.poll(), 2);
+		}
+        return answer;
+    }
 }
