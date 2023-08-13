@@ -11,7 +11,7 @@ public class BOJ_11725 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		n = sc.nextInt();
-		
+
 		list = new ArrayList[n+1];
 		parents = new int[n+1];
 		check = new boolean[n+1];

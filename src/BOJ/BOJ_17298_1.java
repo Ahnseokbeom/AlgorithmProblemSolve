@@ -17,7 +17,7 @@ public class BOJ_17298_1 {
 		for(int i = 0;i<list.length;i++) {
 			list[i] = Integer.parseInt(st.nextToken());
 		}
-		for(int i = 0;i<n;i++) { //
+		for(int i = 0;i<n;i++) {
 			while(!stack.isEmpty() && list[stack.peek()]<list[i]) {
 				list[stack.pop()] = list[i];
 				}

@@ -21,5 +21,4 @@ public class BOJ_2225 {
 		}
 		System.out.println(dp[n][k]);
 	}
-
 }
