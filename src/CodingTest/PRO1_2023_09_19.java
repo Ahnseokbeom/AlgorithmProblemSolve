@@ -1,6 +1,6 @@
 package CodingTest;
 
-public class Gavia1 {
+public class PRO1_2023_09_19 {
 	public static void main(String[] args) {
 		System.out.println(solution(6));
 	}
