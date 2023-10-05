@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class PRO_175177 {
+public class PRO_거스름돈 {
 	static int[] arr = {40, 20, 10, 5, 1};
 	static int answer = 0;
 	public static void main(String[] args) throws IOException{
