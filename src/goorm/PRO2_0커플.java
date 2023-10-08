@@ -2,7 +2,7 @@ package goorm;
 
 import java.util.ArrayList;
 
-public class PRO_0커플 {
+public class PRO2_0커플 {
 	static int answer;
 	static ArrayList<Integer> list;
 	public static void main(String[] args) {

@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
 
-public class PRO_파손된램 {
+public class PRO2_파손된램 {
 	static ArrayList<Integer> arr = new ArrayList<>();
 	static int count = 0;
 	static StringBuilder sb;

@@ -1,6 +1,6 @@
 package goorm;
 
-public class PRO_2차원배열 {
+public class PRO2_2차원배열 {
 	public static void main(String[] args) {
 		solution(9);
 	}
