@@ -6,6 +6,8 @@ public class PRO3_2023_10_14 {
 	public static void main(String[] args) {
 		System.out.println(solution(2, new int[][] {{0,3},{2,5},{4,2},{5,3}}));
 		System.out.println(solution(1, new int[][] {{2,3},{5,4},{6,3},{7,4}}));
+		System.out.println(solution(2, new int[][] {{0,2},{1,3},{5,2},{6,4}}));
+		System.out.println(solution(1, new int[][] {{0,2},{1,3},{5,2},{6,4}}));
 	}
 	public static int solution(int N, int[][] simulation_data) {
         int answer = 0;  // 전체 대기 시간 합을 저장할 변수
