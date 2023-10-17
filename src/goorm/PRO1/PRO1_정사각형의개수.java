@@ -1,4 +1,4 @@
-package goorm;
+package goorm.PRO1;
 
 public class PRO1_정사각형의개수 {
 	static long[] dp;

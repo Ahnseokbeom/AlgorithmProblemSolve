@@ -1,4 +1,4 @@
-package goorm;
+package goorm.PRO2;
 
 import java.util.Arrays;
 

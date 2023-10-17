@@ -1,4 +1,4 @@
-package goorm;
+package goorm.PRO2;
 
 public class PRO2_폭탄구현하기 {
 	static int[] dx = {0,0,1,-1};

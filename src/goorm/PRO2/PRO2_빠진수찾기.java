@@ -1,4 +1,4 @@
-package goorm;
+package goorm.PRO2;
 
 public class PRO2_빠진수찾기 {
 	static long answer;

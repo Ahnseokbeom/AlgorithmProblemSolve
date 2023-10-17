@@ -1,4 +1,4 @@
-package goorm;
+package goorm.PRO2;
 
 public class PRO2_단어필터 {
 	public static void main(String[] args){

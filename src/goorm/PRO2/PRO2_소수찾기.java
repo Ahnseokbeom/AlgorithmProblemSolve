@@ -1,11 +1,11 @@
-package goorm;
+package goorm.PRO2;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class PRO_소수찾기 {
+public class PRO2_소수찾기 {
 	static int n, answer;
 	static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	static StringTokenizer st;

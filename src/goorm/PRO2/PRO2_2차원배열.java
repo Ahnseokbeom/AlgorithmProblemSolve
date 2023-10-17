@@ -1,4 +1,4 @@
-package goorm;
+package goorm.PRO2;
 
 public class PRO2_2차원배열 {
 	public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package goorm;
+package goorm.PRO1;
 
 public class PRO1_합계산기 {
 	static int answer;
