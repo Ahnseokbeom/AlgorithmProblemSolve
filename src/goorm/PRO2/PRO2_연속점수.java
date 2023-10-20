@@ -26,7 +26,7 @@ public class PRO2_연속점수 {
 		for(int i = 0;i<n;i++) {
 			dp[i] = arr[i];
 			for(int j = 0;j<i;j++) {
-				if(arr[j]+1 == arr[i] && dp[i] < dp[j]+arr[i]) dp[i] = dp[j]+arr[i];
+				if(i-1==j && arr[j]+1 == arr[i] && dp[i] < dp[j]+arr[i]) dp[i] = dp[j]+arr[i];
 			}
 			sum = Math.max(sum, dp[i]);
 		}
