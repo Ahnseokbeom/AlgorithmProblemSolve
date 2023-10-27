@@ -13,11 +13,6 @@ public class PRO2_단어필터 {
             e = e.substring(0, index) + e.substring(index + s.length());
             index = e.indexOf(s);
         }
-
-        if (e.isEmpty()) {
-            return "EMPTY";
-        } else {
-            return e;
-        }
+        return e.isEmpty()?"EMPTY":e;
     }
 }
