@@ -3,6 +3,7 @@ package Softeer.PRO3;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class PRO3_징검다리 {
@@ -27,6 +28,7 @@ public class PRO3_징검다리 {
 	          }
 	        }
 	      }
+		System.out.println(Arrays.toString(dp));
       for(int i : dp) answer = Math.max(answer,i);
       return answer;
 	}
