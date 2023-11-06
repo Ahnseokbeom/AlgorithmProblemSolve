@@ -1,12 +1,18 @@
 package goorm.PRO1;
 
+import java.io.IOException;
+import java.math.BigInteger;
+
 public class PRO1_정수의길이 {
-	public static void main(String[] args) {
-		System.out.println(solution(10));
-		System.out.println(solution(-12));
-		System.out.println(solution(0));
+	public static void main(String[] args) throws IOException{
+		System.out.println(solution(new BigInteger("10")));
+		System.out.println(solution(new BigInteger("-12")));
+		System.out.println(solution(new BigInteger("0")));
 	}
-	public static int solution(long n) {
+	public static long solution(BigInteger n) {
+		return n.toString().length();
+	}
+	public static long len(int n) {
 		return String.valueOf(n).length();
 	}
 }
