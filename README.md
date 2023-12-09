@@ -1,15 +1,35 @@
-코딩테테스트 연습
+# Algorithm Problem Solving
 
-<a href="https://www.codeup.kr"><h2>CodeUp</h2></a><br>
-BOJ_문제번호 형식으로 저장<br>
+This repository contains my solutions to algorithm problems from various online judges, including CodeUp, Softeer, and goorm. Each problem is stored in the format PRO_문제난이도_문제이름(한글).
 
-<a href="https://softeer.ai/index"><h2>Softeer</h2></a><br>
-각 문제별 난이도에 맞는 파일로 분류<br>
-PRO문제난이도_문제이름(한글) 형식으로 저장<br>
+## CodeUp
 
-<a href="https://level.goorm.io/"><h2>goorm</h2></a><br>
-각 문제별 난이도에 맞는 파일로 분류<br>
-PRO문제난이도_문제이름(한글) 형식으로 저장<br>
+### Language
+- Java
 
-<h2>사용 언어</h2>
-<h3>Java</h3>
+### File Naming Convention
+- PRO_문제난이도_문제이름(한글).java
+
+## Softeer
+
+### Language
+- Java
+
+### File Naming Convention
+- PRO_문제난이도_문제이름(한글).java
+
+## goorm
+
+### Language
+- Java
+
+### File Naming Convention
+- PRO_문제난이도_문제이름(한글).java
+
+### How to Contribute
+1. Fork the repository.
+2. Create a new branch for your changes.
+3. Commit and push your solutions.
+4. Submit a pull request.
+
+Thank you for contributing to my algorithm problem-solving repository!
