@@ -8,23 +8,37 @@ This repository contains my solutions to algorithm problems from various online 
 - Java
 
 ### File Naming Convention
-- PRO_문제난이도_문제이름(한글).java
+- PRO_문제번호.java
 
 ## Softeer
 
 ### Language
 - Java
 
-### File Naming Convention
-- PRO_문제난이도_문제이름(한글).java
+### File Structure
+- PRO1
+  - PRO1_문제이름1(한글).java
+  - PRO1_문제이름2(한글).java
+  - ...
+- PRO2
+  - PRO2_문제이름1(한글).java
+  - PRO2_문제이름2(한글).java
+  - ...
 
 ## goorm
 
 ### Language
 - Java
 
-### File Naming Convention
-- PRO_문제난이도_문제이름(한글).java
+### File Structure
+- PRO1
+  - PRO1_문제이름1(한글).java
+  - PRO1_문제이름2(한글).java
+  - ...
+- PRO2
+  - PRO2_문제이름1(한글).java
+  - PRO2_문제이름2(한글).java
+  - ...
 
 ### How to Contribute
 1. Fork the repository.
