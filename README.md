@@ -8,7 +8,7 @@ This repository contains my solutions to algorithm problems from various online 
 - Java
 
 ### File Naming Convention
-- PRO_문제번호.java
+- PRO_ProblemNumber.java
 
 ## Softeer
 
@@ -17,12 +17,12 @@ This repository contains my solutions to algorithm problems from various online 
 
 ### File Structure
 - PRO1
-  - PRO1_문제이름1(한글).java
-  - PRO1_문제이름2(한글).java
+  - PRO1_ProblemName1.java
+  - PRO1_ProblemName2.java
   - ...
 - PRO2
-  - PRO2_문제이름1(한글).java
-  - PRO2_문제이름2(한글).java
+  - PRO2_ProblemsName1.java
+  - PRO2_ProblemsName2.java
   - ...
 
 ## goorm
@@ -32,12 +32,12 @@ This repository contains my solutions to algorithm problems from various online 
 
 ### File Structure
 - PRO1
-  - PRO1_문제이름1(한글).java
-  - PRO1_문제이름2(한글).java
+  - PRO1_ProblemName1.java
+  - PRO1_ProblemName2.java
   - ...
 - PRO2
-  - PRO2_문제이름1(한글).java
-  - PRO2_문제이름2(한글).java
+  - PRO2_ProblemName1.java
+  - PRO2_ProblemName2.java
   - ...
 
 ### How to Contribute
