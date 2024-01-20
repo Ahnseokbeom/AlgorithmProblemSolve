@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class PRO2_장애물인식프로그램 {
+public class PRO2_6282 {
 	static int[][] arr;
 	static boolean[][] check;
 	static int[] dx = {0,0,1,-1};

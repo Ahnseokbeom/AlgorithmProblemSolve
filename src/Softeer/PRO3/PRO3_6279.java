@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class PRO3_스마트물류 {
+public class PRO3_6279 {
 	static int answer;
 	static boolean[] check;
 	public static void main(String[] args) throws IOException{

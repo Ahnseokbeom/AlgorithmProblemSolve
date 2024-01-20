@@ -2,7 +2,7 @@ package Softeer.PRO2;
 
 import java.util.Scanner;
 
-public class PRO2_바이러스 {
+public class PRO2_6284 {
 	static int mod = 1000000007;
     public static void main(String[] args) {
       Scanner sc = new Scanner(System.in);

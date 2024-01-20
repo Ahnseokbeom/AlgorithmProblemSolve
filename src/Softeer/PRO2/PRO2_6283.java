@@ -3,7 +3,7 @@ package Softeer.PRO2;
 import java.util.Scanner;
 import java.util.stream.IntStream;
 
-public class PRO2_8단변속기 {
+public class PRO2_6283 {
 	 public static void main(String[] args) {
 	        Scanner sc = new Scanner(System.in);
 	        int[] arr = new int[8];

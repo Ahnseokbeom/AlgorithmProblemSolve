@@ -19,7 +19,7 @@ class Meeting {
         this.end = end;
     }
 }
-public class PRO2_회의실예약 {
+public class PRO2_6266 {
 	public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();

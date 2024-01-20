@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Stack;
 import java.util.StringTokenizer;
 
-public class PRO3_우물안개구리 {
+public class PRO3_6289 {
 	static int n,m;
 	static int[] arr;
 	static boolean[] check;

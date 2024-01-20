@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class PRO3_이미지프로세싱 {
+public class PRO3_6265 {
 	static int[] di = {0,0,1,-1};
     static int[] dj = {-1,1,0,0};
     static int[][] arr;

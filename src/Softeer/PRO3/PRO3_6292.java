@@ -1,6 +1,6 @@
 package Softeer.PRO3;
 
-public class PRO3_수퍼바이러스 {
+public class PRO3_6292 {
 	private static final long mod = 1000000007;
     public static void main(String[] args) {
        System.out.println(solution(1,2,10));

@@ -21,7 +21,7 @@ class Gbc{
 		return speed;
 	}
 }
-public class PRO2_GBC {
+public class PRO2_6270 {
 	public static void main(String[] args) throws IOException{
       BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
       StringTokenizer st = new StringTokenizer(br.readLine());

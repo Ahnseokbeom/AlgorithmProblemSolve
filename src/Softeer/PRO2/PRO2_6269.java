@@ -1,6 +1,6 @@
 package Softeer.PRO2;
 
-public class PRO2_비밀메뉴 {
+public class PRO2_6269 {
 	public static void main(String[] args) {
 		System.out.println(solution(3, 10, 5, new int[] {1,4,5}, new int[] {3,3,1,2,4,1,4,5,1,4}));
 		System.out.println(solution(4, 10, 3, new int[] {2,1,3,2}, new int[] {1,3,2,1,3,2,1,3,2,1}));

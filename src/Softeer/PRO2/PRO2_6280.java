@@ -1,6 +1,6 @@
 package Softeer.PRO2;
 
-public class PRO2_지도자동구축 {
+public class PRO2_6280 {
 	public static void main(String[] args) {
 		System.out.println(solution(2));
 		System.out.println(solution(3));
