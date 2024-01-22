@@ -1,6 +1,6 @@
 package goorm.PRO1;
 
-public class PRO1_대소문자바꾸기 {
+public class PRO1_174732 {
 	public static void main(String[] args) {
 		System.out.println(solution("goormLevel"));
 		System.out.println(solution("commit"));
