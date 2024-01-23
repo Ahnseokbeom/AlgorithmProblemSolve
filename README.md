@@ -17,12 +17,12 @@ This repository contains my solutions to algorithm problems from various online 
 
 ### File Structure
 - PRO1
-  - PRO1_ProblemName1.java
-  - PRO1_ProblemName2.java
+  - PRO1_ProblemNumber1.java
+  - PRO1_ProblemNumber2.java
   - ...
 - PRO2
-  - PRO2_ProblemsName1.java
-  - PRO2_ProblemsName2.java
+  - PRO2_ProblemsNumber1.java
+  - PRO2_ProblemsNumber2.java
   - ...
 
 ## goorm
@@ -32,12 +32,12 @@ This repository contains my solutions to algorithm problems from various online 
 
 ### File Structure
 - PRO1
-  - PRO1_ProblemName1.java
-  - PRO1_ProblemName2.java
+  - PRO1_ProblemNumber1.java
+  - PRO1_ProblemNumber2.java
   - ...
 - PRO2
-  - PRO2_ProblemName1.java
-  - PRO2_ProblemName2.java
+  - PRO2_ProblemNumber1.java
+  - PRO2_ProblemNumber2.java
   - ...
 
 ### How to Contribute
